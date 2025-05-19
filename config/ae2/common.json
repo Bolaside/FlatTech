@@ -48,7 +48,7 @@
     "chargedStaff": 8000,
     "entropyManipulator": 200000,
     "portableCell": 20000,
-    "colorApplicator": 20000,
+    "colorApplicator": 200000,
     "matterCannon": 20000
   },
   "worldGen": {
@@ -82,7 +82,7 @@
   },
   "Condenser": {
     "MatterBalls": 256,
-    "Singularity": 256000
+    "Singularity": 262144
   },
   "tickRates": {
     "_comment": " Min / Max Tickrates for dynamic ticking, most of these components also use sleeping, to prevent constant ticking, adjust with care, non standard rates are not supported or tested.",
