@@ -46,6 +46,7 @@
 - [GuideME](https://modrinth.com/mod/Ck4E7v7R) [20\.1\.7] by shartte
 - [IBE Editor](https://modrinth.com/mod/E9sX1ncV) [2\.2\.8] by skyecodes
 - [Inventory Essentials](https://modrinth.com/mod/Boon8xwi) [8\.2\.7] by BlayTheNinth
+- [Item Obliterator](https://modrinth.com/mod/3ESR84kR) [2\.3\.0] by ElocinDev
 - [Item placer](https://modrinth.com/mod/qm0tEl8v) [3\.0\.0] by akicater
 - [ItemLocks](https://modrinth.com/mod/tJzrFuyy) [1\.20\.1\-1\.3\.8]
 - [Jade](https://modrinth.com/mod/nvQzSEkH) [11\.13\.1\+forge] by Snownee
@@ -59,6 +60,7 @@
 - [Modern AE2 Additions](https://modrinth.com/mod/5G4fpXXj) [1\.5\.0] by Raine
 - [ModernFix](https://modrinth.com/mod/nmDcB62a) [5\.22\.0\+mc1\.20\.1] by embeddedt
 - [Mouse Tweaks](https://modrinth.com/mod/aC3cM3Vq) [2\.25\.1] by Ivan Molodetskikh \(YaLTeR\)
+- [Necronomicon](https://modrinth.com/mod/P1Kv5EAO) [1\.6\.0] by ElocinDev
 - [No Telemetry](https://modrinth.com/mod/hg77g4Pw) [1\.9\.0] by kb1000
 - [Notes](https://modrinth.com/mod/ko8Qabo1) [1\.20\.1\-1\.3\.0\-forge] by ChaosTheDude
 - [Oculus](https://modrinth.com/mod/GchcoXML) [1\.8\.0] by NanoLive, dima\_dencep, coderbot, IMS212, Justsnoopy30, FoundationGames
@@ -73,5 +75,4 @@
 - [Sound Physics Remastered](https://modrinth.com/mod/qyVF9oeo) [1\.20\.1\-1\.4\.13] by Sonic Ether, vlad2305m, Max Henkel, Saint
 - [Tempad](https://modrinth.com/mod/gKNwt7xu) [2\.3\.4] by CodexAdrian
 - [Titanium](https://modrinth.com/mod/1Ro7m06l) [3\.8\.32] by TheCodedOne, Buuz135
-- [TrashSlot](https://modrinth.com/mod/vRYk0bv7) [15\.1\.1] by BlayTheNinth
 - [spark](https://modrinth.com/mod/l6YH9Als) [1\.10\.53] by Luck
