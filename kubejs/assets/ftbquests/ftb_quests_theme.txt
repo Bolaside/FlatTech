@@ -1,0 +1,5 @@
+[*]
+background: kubejs:textures/gui/quest_background.png; color=#DC7D7D7D; tile_size=64
+chapter_panel_background: hollow_rectangle:{{widget_border}}; round_edges + {{background}}; color=#DCB4B4B4; padding=2
+
+widget_border: #1F1F1F

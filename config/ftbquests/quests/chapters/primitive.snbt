@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "primitive"
+	group: "1723345ED618CA0C"
+	icon: "gtceu:rubber_sapling"
+	id: "4309987F6EB5EC01"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Primitive"
+}
