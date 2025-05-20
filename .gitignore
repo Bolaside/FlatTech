@@ -1,2 +1,4 @@
-/.probe
-/.vscode
+.probe
+.vscode
+
+config/spark/tmp
