@@ -40,20 +40,44 @@ ServerEvents.recipes(event => {
     .duration(20*3)
     .EUt(24)
 
-  // chemical bath dyeing recipes
-  // i'll add more later h
-  const smartCables = Ingredient.of("#ae2:smart_cables").itemIds
-  smartCables.remove("ae2:fluix_smart_cable")
-  smartCables.forEach(cable => {
-    const color = cable.match(/ae2:(\w+)_fluix_cable/)[1]
-    const cableName = cable.split(":")[1]
-    console.log(cable, color, cableName)
-  
-    event.recipes.gtceu.chemical_bath(cableName)
-      .itemInputs(Item.of("ae2:fluix_smart_cable", 8))
-      .inputFluids(Fluid.of(`gtceu:${color}_dye`, 144/4))
-      .itemOutputs(Item.of(cable, 4))
-      .duration(20*3)
-      .EUt(96)
-  })
+  // chemical bath dyeing recipes, they use 2x less dyes than crafting
+  const getAllColoredCableIds = cableType => {
+    const cables = Ingredient.of(`#ae2:${cableType}_cable`).itemIds
+    cables.remove(`ae2:fluix_${cableType}_cable`)
+
+    return cables
+  }
+
+  const makeDyeingRecipes = cableType => {
+    const cableIds = getAllColoredCableIds(cableType)
+    const colorRegex = new RegExp(`ae2:(\\w+)_${cableType}_cable`)
+    const dyeAmount = cableType.endsWith("dense") ? 144/4 : 144/16
+
+    cableIds.forEach(cable => {
+      const color = cable.match(colorRegex)[1]
+      const cableName = cable.split(":")[1]
+
+      event.recipes.gtceu.chemical_bath(cableName)
+        .itemInputs(Item.of(`ae2:fluix_${cableType}_cable`))
+        .inputFluids(Fluid.of(`gtceu:${color}_dye`, dyeAmount))
+        .itemOutputs(Item.of(cable))
+        .duration(20)
+        .EUt(7)
+    })
+  }
+
+  const makeUndyeRecipe = cableType => {
+    const cableRegex = new RegExp(`ae2:(?!fluix_)(\\w+)_${cableType}_cable`)
+
+    event.recipes.gtceu.chemical_bath(`decolor_${cableType}_cable`)
+      .itemInputs(Ingredient.of(cableRegex))
+      .inputFluids(Fluid.of("gtceu:chlorine", 50))
+      .itemOutputs(Item.of(`ae2:fluix_${cableType}_cable`))
+      .duration(20*20)
+      .EUt(2)
+  }
+
+  const cableTypes = ["glass", "covered", "covered_dense", "smart", "smart_dense"]
+  cableTypes.forEach(cableType => makeDyeingRecipes(cableType))
+  cableTypes.forEach(cableType => makeUndyeRecipe(cableType))
 })

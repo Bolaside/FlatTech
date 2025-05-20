@@ -1,3 +1,7 @@
 {
+  "block.itemplacer.laying_item": "Placed Item",
+
+  "kubejs.cobble": "Cobble",
+
   "material.gtceu.redstone_glowstone_mixture": "Redstone-Glowstone Mixture"
 }
