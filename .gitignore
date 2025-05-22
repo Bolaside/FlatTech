@@ -1,4 +1,20 @@
-.probe
-.vscode
+# dev
+/.probe
+/.vscode
 
-config/spark/tmp
+# minecraft
+/coremods
+/gtceu
+/local
+/mods
+/resourcepacks
+/saves
+/screenshots
+/shaderpacks
+/texturepacks
+/*.json
+options.txt
+
+# the file said to not include it unless you know
+# what you're doing... guess what
+rhino.local.properties
