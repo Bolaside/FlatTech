@@ -4,6 +4,8 @@ testing
 i have no idea what i'm doing
 
 ## credit to
-monifactory for the dark mode shader blacklist
+**juhmop - custom item textures (goat)**
 
-juhmop for the custom item textures (goat)
+monifactory - dark mode shader blacklist and the glowstone chemical formula
+
+cech12 - wooden shears texture
