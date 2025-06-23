@@ -1,6 +1,7 @@
-const $Stream = Java.loadClass("java.util.stream.Stream")
 
 ServerEvents.recipes(event => {
+  const getComponent = (component, voltage) => component.getIngredient(GTValues[voltage])
+
   event.shaped("minecraft:cobblestone", ["XX ", "XX "], {
     "X": "kubejs:cobble"
   })
@@ -13,17 +14,13 @@ ServerEvents.recipes(event => {
     "c": "minecraft:cobblestone_slab"
   })
 
-  const getComponent = (component, voltage) => component.getIngredient(GTValues[voltage])
-
-  for (const voltage of ["ULV", "LV", "MV"]) {
-    event.shaped(`gtceu:${voltage.toLowerCase()}_squeezer`, ["CRC", "PHP", "pCp"], {
-      "C": getComponent(CraftingComponent.CABLE, voltage),
-      "R": getComponent(CraftingComponent.ROTOR, voltage),
-      "H": getComponent(CraftingComponent.HULL, voltage),
-      "P": getComponent(CraftingComponent.PISTON, voltage),
-      "p": getComponent(CraftingComponent.PUMP, voltage)
-    })
-  }
+  event.shaped(`gtceu:ulv_squeezer`, ["CRC", "PHP", "pCp"], {
+    "C": getComponent(CraftingComponent.CABLE, "ULV"),
+    "R": getComponent(CraftingComponent.ROTOR, "ULV"),
+    "H": getComponent(CraftingComponent.HULL, "ULV"),
+    "P": getComponent(CraftingComponent.PISTON, "ULV"),
+    "p": getComponent(CraftingComponent.PUMP, "ULV")
+  })
 
   event.shaped("gtceu:ulv_mixer", ["GRG", "GMG", "CHC"], {
     "G": "minecraft:glass",

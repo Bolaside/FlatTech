@@ -9,7 +9,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
 
 GTCEuStartupEvents.registry("gtceu:machine", event => {
   event.create("squeezer", "simple")
-    .tiers(GTValues.ULV, GTValues.LV, GTValues.MV)
+    .tiers(GTValues.ULV)
     .definition((tier, builder) => {
       builder
         .langValue(`${GTValues.VLVH[tier]} Squeezer`)
