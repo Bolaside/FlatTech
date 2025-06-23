@@ -12,7 +12,6 @@
 - [Better Brightness Slider](https://modrinth.com/mod/aXleiZbk) [1\.0] by LaidBackSloth
 - [Better ModList](https://modrinth.com/mod/sbpqhzIG) [0\.1\.12] by foxy, Prospector, haykam821, TerraformersMC
 - [CalcMod](https://modrinth.com/mod/XoHTb2Ap) [1\.3\.0] by jsa2025
-- [Chipped](https://modrinth.com/mod/BAscRYKm) [3\.0\.7] by Alex Nijjar, Grimbop, Kekie6, ThatGravyBoat
 - [Cloth Config v10 API](https://modrinth.com/mod/9s6osm5g) [11\.1\.136] by shedaniel
 - [Clumps](https://modrinth.com/mod/Wnxd13zP) [12\.0\.0\.4] by Jaredlll08
 - [Collective](https://modrinth.com/mod/e0M1UDsY) [8\.3] by Rick South
