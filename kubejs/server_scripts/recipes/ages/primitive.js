@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
     "S": "#forge:tools/saws",
     "F": "#forge:tools/files",
     "R": "gtceu:long_wood_rod",
-    "M": "#forge:tools/mallets",
+    "M": "#forge:tools/mallets"
   })
 
   event.recipes.gtceu.bender("bend_long_stick_to_spring")
@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
     "S": "#forge:tools/saws",
     "F": "#forge:tools/files",
     "s": "minecraft:stick",
-    "M": "#forge:tools/mallets",
+    "M": "#forge:tools/mallets"
   })
 
   event.recipes.gtceu.bender("bend_stick_to_small_spring")
