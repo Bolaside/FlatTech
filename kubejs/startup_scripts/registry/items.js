@@ -4,7 +4,7 @@ StartupEvents.registry("item", event => {
   event.create("cobble") // <- cobble
 
   event.create("bedrock_ore_extractor").unstackable()
-  event.create("wooden_shears", "shears")
+  event.create("wooden_shears", "shears").maxDamage(32)
 
   event.create("empty_squeezer_mold")
   event.create("sieve_squeezer_mold")
