@@ -1,6 +1,5 @@
-const STAGE_NAME = "receivedStarterItems"
-
 PlayerEvents.loggedIn(event => {
+  const STAGE_NAME = "receivedStarterItems"
   const { player } = event
 
   if (!player.stages.has(STAGE_NAME)) {

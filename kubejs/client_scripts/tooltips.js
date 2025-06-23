@@ -1,4 +1,10 @@
 ItemEvents.tooltip(event => {
-  event.add("minecraft:furnace", Text.of("§7Primitive furnace, really slow...").italic(false))
-  event.add("kubejs:cobble", Text.of("§7Just one cobble. Found in dirt").italic(false))
+  const basicText = text => Text.of(`§7${text}`).italic(false)
+  
+  event.add("kubejs:cobble", basicText("Just one cobble. Found in dirt"))
+  event.add("kubejs:bedrock_ore_extractor", basicText("Extracts basic metals from the indestructible rock layer"))
+  
+  event.add("kubejs:empty_squeezer_mold", basicText("Raw plate to make squeezer molds"))
+  event.add("kubejs:sieve_squeezer_mold", basicText("Squeezer shape for sieving blocks (no, not the Ex-Nihilo way)"))
+  event.add("kubejs:plank_squeezer_mold", basicText("Squeezer shape for making planks"))
 })

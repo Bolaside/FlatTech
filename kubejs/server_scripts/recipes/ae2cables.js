@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
       .duration(20*5)
       .EUt(7)
   })
-
+ 
   event.recipes.gtceu.mixer("redstone_glowstone_mixture")
     .inputFluids([Fluid.of("gtceu:glowstone", 144), Fluid.of("gtceu:redstone", 144)])
     .outputFluids(Fluid.of("gtceu:redstone_glowstone_mixture", 288))
@@ -48,18 +48,25 @@ ServerEvents.recipes(event => {
     return cables
   }
 
+  const getCableColor = cableId => {
+    const start = cableId.indexOf(":") + 1
+    const end = cableId.indexOf("_")
+    
+    return cableId.substring(start, end)
+  }
+
   const makeDyeingRecipes = cableType => {
     const cableIds = getAllColoredCableIds(cableType)
-    const colorRegex = new RegExp(`ae2:(\\w+)_${cableType}_cable`)
     const dyeAmount = cableType.endsWith("dense") ? 144/4 : 144/16
 
     cableIds.forEach(cable => {
-      const color = cable.match(colorRegex)[1]
+      const cableColor = getCableColor(cable)
       const cableName = cable.split(":")[1]
 
       event.recipes.gtceu.chemical_bath(cableName)
-        .itemInputs(Item.of(`ae2:fluix_${cableType}_cable`))
-        .inputFluids(Fluid.of(`gtceu:${color}_dye`, dyeAmount))
+        .category(GTRecipeCategories.CHEM_DYES)
+        .itemInputs(Ingredient.of(`#ae2:${cableType}_cable`))
+        .inputFluids(Fluid.of(`gtceu:${cableColor}_dye`, dyeAmount))
         .itemOutputs(Item.of(cable))
         .duration(20)
         .EUt(7)
@@ -67,10 +74,9 @@ ServerEvents.recipes(event => {
   }
 
   const makeUndyeRecipe = cableType => {
-    const cableRegex = new RegExp(`ae2:(?!fluix_)(\\w+)_${cableType}_cable`)
-
     event.recipes.gtceu.chemical_bath(`decolor_${cableType}_cable`)
-      .itemInputs(Ingredient.of(cableRegex))
+      .category(GTRecipeCategories.CHEM_DYES)
+      .itemInputs(Ingredient.of(`#ae2:${cableType}_cable`))
       .inputFluids(Fluid.of("gtceu:chlorine", 50))
       .itemOutputs(Item.of(`ae2:fluix_${cableType}_cable`))
       .duration(20*20)
