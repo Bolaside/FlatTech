@@ -16,7 +16,16 @@
   // Items here will be unusable completely
   //    Example: minecraft:diamond
   "blacklisted_items": [
-    "examplemod:example_item"
+    "!quark:*furnace",
+
+    // bro why does this mod need allat
+    "!crazyae2addons:*card",
+    "!crazyae2addons:*mob*",
+    "!crazyae2addons:*data*",
+    "crazyae2addons:display_monitor",
+    "crazyae2addons:energy_exporter",
+    "crazyae2addons:entity_ticker",
+    "crazyae2addons:xp_shard"
   ],
   // -----------------------------------------------------------
   // Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.
