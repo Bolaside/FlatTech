@@ -22,6 +22,9 @@
 options.txt
 hotbar.nbt
 
+# specific config files
+config/oculus.properties
+
 # the file said to not include it unless you know
 # what you're doing... guess what
 rhino.local.properties
