@@ -1,19 +1,25 @@
 # dev
-/.probe
+/kubejs/probe
 /.vscode
 
 # minecraft
 /coremods
 /gtceu
+/ldlib
 /local
+/logs
 /mods
 /resourcepacks
 /saves
+/schematics
 /screenshots
+/server-resource-packs
 /shaderpacks
 /texturepacks
 /*.json
+.qmenu_opened.marker
 options.txt
+hotbar.nbt
 
 # the file said to not include it unless you know
 # what you're doing... guess what
