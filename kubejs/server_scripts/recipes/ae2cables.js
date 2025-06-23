@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
   event.recipes.gtceu.wiremill("fluix_glass_cable")
     .itemInputs(Item.of("ae2:fluix_crystal"))
     .itemOutputs(Item.of("ae2:fluix_glass_cable", 4))
-    .duration(20*5)
+    .duration(20 * 5)
     .EUt(4)
 
   insulation.forEach(rubber => {
@@ -23,21 +23,21 @@ ServerEvents.recipes(event => {
       .itemInputs(Item.of("ae2:fluix_glass_cable"))
       .inputFluids(rubber)
       .itemOutputs(Item.of("ae2:fluix_covered_cable"))
-      .duration(20*5)
+      .duration(20 * 5)
       .EUt(7)
   })
  
   event.recipes.gtceu.mixer("redstone_glowstone_mixture")
     .inputFluids([Fluid.of("gtceu:glowstone", 144), Fluid.of("gtceu:redstone", 144)])
     .outputFluids(Fluid.of("gtceu:redstone_glowstone_mixture", 288))
-    .duration(20*4)
+    .duration(20 * 4)
     .EUt(16)
 
   event.recipes.gtceu.assembler("cover_fluix_covered_cable")
     .itemInputs(Item.of("ae2:fluix_covered_cable", 1))
     .inputFluids(Fluid.of("gtceu:redstone_glowstone_mixture", 144/2))
     .itemOutputs(Item.of("ae2:fluix_smart_cable", 1))
-    .duration(20*3)
+    .duration(20 * 3)
     .EUt(24)
 
   // chemical bath dyeing recipes, they use 2x less dyes than crafting
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
       .itemInputs(Ingredient.of(`#ae2:${cableType}_cable`))
       .inputFluids(Fluid.of("gtceu:chlorine", 50))
       .itemOutputs(Item.of(`ae2:fluix_${cableType}_cable`))
-      .duration(20*20)
+      .duration(20 * 20)
       .EUt(2)
   }
 
