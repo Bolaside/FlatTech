@@ -20,13 +20,13 @@ ServerEvents.recipes(event => {
     "c": "minecraft:cobblestone_slab"
   }).id("minecraft:shaped/furnace")
 
-  // event.shaped(`gtceu:ulv_squeezer`, ["CRC", "PHP", "pCp"], {
-  //   "C": getComponent(GTCraftingComponents.CABLE, "ULV"),
-  //   "R": getComponent(GTCraftingComponents.ROTOR, "ULV"),
-  //   "H": getComponent(GTCraftingComponents.HULL, "ULV"),
-  //   "P": getComponent(GTCraftingComponents.PISTON, "ULV"),
-  //   "p": getComponent(GTCraftingComponents.PUMP, "ULV")
-  // })
+  event.shaped(`gtceu:ulv_squeezer`, ["CRC", "PHP", "pCp"], {
+    "C": getComponent(CraftingComponent.CABLE, "ULV"),
+    "R": getComponent(CraftingComponent.ROTOR, "ULV"),
+    "H": getComponent(CraftingComponent.HULL, "ULV"),
+    "P": getComponent(CraftingComponent.PISTON, "ULV"),
+    "p": getComponent(CraftingComponent.PUMP, "ULV")
+  })
 
   event.shaped("gtceu:ulv_mixer", ["GRG", "GMG", "CHC"], {
     "G": "minecraft:glass",
