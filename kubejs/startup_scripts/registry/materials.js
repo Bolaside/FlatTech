@@ -47,6 +47,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     .iconSet(GTMaterialIconSet.METALLIC)
     .flags(GTMaterialFlags.GENERATE_PLATE)
     .cableProperties(GTValues.V[GTValues.ULV], 1, 0, true)
+    .itemPipeProperties(1024, 2)
 })
 
 GTCEuStartupEvents.materialModification(() => {
