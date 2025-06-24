@@ -1,4 +1,3 @@
-
 ServerEvents.recipes(event => {
   const getComponent = (component, voltage) => component.getIngredient(GTValues[voltage])
 
@@ -6,21 +5,28 @@ ServerEvents.recipes(event => {
     "X": "kubejs:cobble"
   })
 
-  event.remove({ output: "minecraft:furnace" })
-  event.shaped("minecraft:furnace", ["PSP", "CcC", "PSP"], {
-    "P": "#minecraft:planks",
-    "S": "gtceu:sticky_resin",
+  event.remove({ mod: "quark", output: "minecraft:furnace" })
+  event.recipes.gtceu.assembler("furnace")
+    .itemInputs(Ingredient.of("#minecraft:stone_tool_materials", 4))
+    .itemOutputs(Item.of("minecraft:furnace"))
+    .circuit(8)
+    .duration(20 * 5)
+    .EUt(7)
+  event.shaped("minecraft:furnace", ["CCC", "WSM", "ccc"], {
     "C": "minecraft:cobblestone",
+    "W": "#forge:tools/wrenches",
+    "S": "gtceu:sticky_resin",
+    "M": "#forge:tools/mallets",
     "c": "minecraft:cobblestone_slab"
-  })
+  }).id("minecraft:shaped/furnace")
 
-  event.shaped(`gtceu:ulv_squeezer`, ["CRC", "PHP", "pCp"], {
-    "C": getComponent(CraftingComponent.CABLE, "ULV"),
-    "R": getComponent(CraftingComponent.ROTOR, "ULV"),
-    "H": getComponent(CraftingComponent.HULL, "ULV"),
-    "P": getComponent(CraftingComponent.PISTON, "ULV"),
-    "p": getComponent(CraftingComponent.PUMP, "ULV")
-  })
+  // event.shaped(`gtceu:ulv_squeezer`, ["CRC", "PHP", "pCp"], {
+  //   "C": getComponent(GTCraftingComponents.CABLE, "ULV"),
+  //   "R": getComponent(GTCraftingComponents.ROTOR, "ULV"),
+  //   "H": getComponent(GTCraftingComponents.HULL, "ULV"),
+  //   "P": getComponent(GTCraftingComponents.PISTON, "ULV"),
+  //   "p": getComponent(GTCraftingComponents.PUMP, "ULV")
+  // })
 
   event.shaped("gtceu:ulv_mixer", ["GRG", "GMG", "CHC"], {
     "G": "minecraft:glass",
@@ -30,6 +36,7 @@ ServerEvents.recipes(event => {
     "H": "gtceu:ulv_machine_hull"
   }).id("gtceu:shaped/ulv_mixer")
 
+  event.remove({ id: /gtceu:compressor\/compress_plate_dust/ })
   event.shaped("gtceu:wood_plate", ["PPP", "RRR", "PPP"], {
     "P": "#minecraft:planks",
     "R": "gtceu:sticky_resin"

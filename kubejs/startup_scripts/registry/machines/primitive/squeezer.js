@@ -14,6 +14,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
       builder
         .langValue(`${GTValues.VLVH[tier]} Squeezer`)
         .recipeType("squeezing")
-        .workableTieredHullRenderer(`gtceu:block/machines/centrifuge`)
+        .workableTieredHullRenderer(`gtceu:block/machines/squeezer`)
     })
 })
