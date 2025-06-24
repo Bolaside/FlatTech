@@ -7,6 +7,290 @@
 	id: "4309987F6EB5EC01"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to FlatTech, a GregTech Modern modpack fully based on a superflat!"
+				""
+				"What do I type here?"
+			]
+			id: "18A861852B2DD3E5"
+			shape: "square"
+			size: 1.5d
+			subtitle: "You'll be here for a while... hopefully"
+			tasks: [{
+				id: "31B608002201535A"
+				title: "Welcome, to the inception."
+				type: "checkmark"
+			}]
+			title: "Inception"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["18A861852B2DD3E5"]
+			description: [
+				"You have a 20% chance of getting a rubber sapling from a grass block (not dirt!)."
+				""
+				"Place the sapling, then [Shift + RMB] with an empty hand to grow any tree instantly. Use the GregTech axe that you get as a reward to chop the entire tree down in one go!"
+			]
+			id: "69204154F3925593"
+			rewards: [{
+				id: "47E1BD57B7B74C2A"
+				item: {
+					Count: 1
+					id: "gtceu:wrought_iron_axe"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							DisableShields: 1b
+							TreeFelling: 1b
+						}
+						GT.Tool: {
+							Damage: 0
+							HarvestLevel: 2
+							MaxDamage: 383
+							ToolSpeed: 4.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Your only wood type for a while"
+			tasks: [{
+				id: "5BF4CB57930E7E16"
+				item: "gtceu:rubber_sapling"
+				type: "item"
+			}]
+			title: "Bouncy Trees"
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["18A861852B2DD3E5"]
+			description: [
+				"You have an 80% chance of getting a cobble from mining dirt (not grass blocks!)."
+				""
+				"Compress 4 together to get a piece of cobblestone. I promise, you won't be getting cobblestone this way for long."
+			]
+			icon: "minecraft:cobblestone"
+			id: "3D65D4F53F138837"
+			subtitle: "4(Cobble) = Cobblestone => Stone = 4, Cobble != 0... 4 of what? Idk"
+			tasks: [
+				{
+					count: 4L
+					id: "0E1640483979521B"
+					item: { Count: 4, id: "kubejs:cobble" }
+					type: "item"
+				}
+				{
+					id: "0B103ED5989D8FE7"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+			]
+			title: "Cobble... stone"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"69204154F3925593"
+				"3D65D4F53F138837"
+				"60F1003D2F2D978C"
+			]
+			description: ["You definitely want a bunch of these, at least 8 for now."]
+			id: "6619D662DBFF9BE1"
+			tasks: [{
+				id: "62F7198C3F97BEA7"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["42594D8E6C5A8DFB"]
+			description: [
+				"Your first pair of crafting tools! Pretty horrible but extremely cheap. In case you're not too familiar with those, you can check out what each tool does on the next page of this quest description. "
+				""
+				"There's gonna be quite a few more tools like those, just not made out of wood."
+				""
+				"This quest gives 64x cobblestone as a reward, trust me, you'll need it soon."
+				""
+				"{@pagebreak}"
+				""
+				"Here's an explanation of every tool in this quest:"
+				"- Soft Mallet: one of two hammer types, this one is a rare crafting tool but is useful to turn machines on/off without entering the GUI. You can also pause machines after one recipe runs if you sneak while right clicking - this is more useful for multiblocks as it won't consume the items for the next recipe cycle."
+				"- File: only a crafting tool, that's it."
+				"- Saw: also not used for anything but crafting, unlike the &nchain&rsaw."
+				"- Wrench: a common crafting tool and is used to rotate blocks and set machine outputs, sneak + right click in the air to change which output it's gonna set: item, fluid, or both."
+			]
+			id: "60F1003D2F2D978C"
+			rewards: [{
+				count: 64
+				id: "7AFE02EDA89E2A6B"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5E4F79AD41EB1E64"
+					item: {
+						Count: 1
+						id: "gtceu:wood_mallet"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 127
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7261DAF0A37A91AD"
+					item: {
+						Count: 1
+						id: "gtceu:wood_file"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 127
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2B9D20DAC8844A8F"
+					item: {
+						Count: 1
+						id: "gtceu:wood_saw"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								HarvestIce: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 127
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "70F70B7571F5ECFA"
+					item: {
+						Count: 1
+						id: "gtceu:wood_wrench"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								Mode: 2b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 1
+								MaxDamage: 127
+								ToolSpeed: 5.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Wooden Tools Vol. 1"
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			description: ["The first way of getting ores in this modpack, and also the first milestone! This is a decently big amount of various components. Don't worry about batch crafting too much for now, these components don't have many uses."]
+			id: "3BDCEC96BE6EFA6A"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Cu, Fe, Sn, Pb"
+			tasks: [{
+				id: "079DEFAF464F7AFB"
+				item: "kubejs:bedrock_ore_extractor"
+				type: "item"
+			}]
+			x: 0.75d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"6619D662DBFF9BE1"
+				"3D65D4F53F138837"
+			]
+			description: ["Simply smelt cobblestone, nothing fancy."]
+			id: "65075EADD5864ED6"
+			rewards: [{
+				count: 32
+				id: "180E6A0A335795D6"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			subtitle: "Pretty generous rewards for such little effort, eh?"
+			tasks: [{
+				id: "2A2EFE558816022E"
+				item: "minecraft:stone"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"65075EADD5864ED6"
+				"60F1003D2F2D978C"
+			]
+			description: [
+				"Chisel some stone with a file into an ingot, and you get yourself a better tool component!"
+				""
+				"You should definitely batch craft this, plates are not cheap right now."
+			]
+			id: "112C3D1EC1B46B29"
+			rewards: [{
+				count: 8
+				id: "34EFCD94122FDF10"
+				item: "gtceu:stone_plate"
+				type: "item"
+			}]
+			size: 1.25d
+			subtitle: "Wait what?"
+			tasks: [{
+				count: 16L
+				id: "0AD1EEF2D2551546"
+				item: { Count: 16, id: "gtceu:stone_ingot" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["69204154F3925593"]
+			description: ["You gotta craft those the (relatively) expensive way for now."]
+			id: "42594D8E6C5A8DFB"
+			tasks: [{
+				count: 16L
+				id: "6F56F742D9127B73"
+				item: "gtceu:wood_plate"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+	]
 	title: "Primitive"
 }
