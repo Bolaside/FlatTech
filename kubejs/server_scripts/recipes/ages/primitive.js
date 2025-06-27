@@ -119,4 +119,11 @@ ServerEvents.recipes(event => {
     .itemOutputs(Item.of("gtceu:red_brass_dust", 9))
     .EUt(GTValues.VA[GTValues.ULV])
     .duration(20 * 20)
+  
+  event.shaped("kubejs:ulv_field_generator", ["WPW", "CBC", "WPW"], {
+    "W": "gtceu:red_brass_quadruple_wire",
+    "P": "gtceu:copper_plate",
+    "C": "#gtceu:circuits/ulv",
+    "B": "minecraft:redstone_block"
+  })
 })

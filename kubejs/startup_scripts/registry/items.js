@@ -9,4 +9,6 @@ StartupEvents.registry("item", event => {
   event.create("empty_squeezer_mold")
   event.create("sieve_squeezer_mold")
   event.create("plank_squeezer_mold")
+
+  event.create("ulv_field_generator")
 })
