@@ -25,6 +25,9 @@ hotbar.nbt
 # specific config files
 config/oculus.properties
 
+# bro idk what's up with this shit
+icon.png
+
 # the file said to not include it unless you know
 # what you're doing... guess what
 rhino.local.properties
