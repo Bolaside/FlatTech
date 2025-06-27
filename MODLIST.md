@@ -49,6 +49,7 @@
 - [IBE Editor](https://modrinth.com/mod/E9sX1ncV) [2\.2\.8] by skyecodes
 - [Inventory Essentials](https://modrinth.com/mod/Boon8xwi) [8\.2\.7] by BlayTheNinth
 - [Item Obliterator](https://modrinth.com/mod/3ESR84kR) [2\.3\.0] by ElocinDev
+- [Item Zoom](https://www.curseforge.com/projects/261725) [2\.9\.0] by mezz
 - [ItemLocks](https://modrinth.com/mod/tJzrFuyy) [1\.20\.1\-1\.3\.8]
 - [Jade](https://modrinth.com/mod/nvQzSEkH) [11\.13\.1\+forge] by Snownee
 - [Just Enough Items](https://modrinth.com/mod/u6dRKJwZ) [15\.20\.0\.106] by mezz
