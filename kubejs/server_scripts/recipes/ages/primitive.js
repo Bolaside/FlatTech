@@ -126,4 +126,20 @@ ServerEvents.recipes(event => {
     "C": "#gtceu:circuits/ulv",
     "B": "minecraft:redstone_block"
   })
+
+  event.shaped("kubejs:wooden_shears", [" P", "P "], {
+    "P": "#minecraft:planks"
+  })
+
+  event.shaped("gtceu:wood_wrench", ["PMP", " P ", " P "], {
+    "P": "gtceu:wood_plate",
+    "M": "#forge:tools/mallets"
+  }).id("gtceu:shaped/wrench_wood")
+
+  event.shaped("gtceu:wood_saw", ["PPS", "FMS"], {
+    "P": "gtceu:wood_plate",
+    "S": "minecraft:stick",
+    "F": "#forge:tools/files",
+    "M": "#forge:tools/mallets"
+  }).id("gtceu:shaped/saw_wood")
 })
