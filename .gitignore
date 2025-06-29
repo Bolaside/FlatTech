@@ -1,0 +1,34 @@
+# dev
+minecraft/kubejs/probe
+/.vscode
+
+# minecraft
+minecraft/coremods
+minecraft/crash-reports
+minecraft/gtceu
+minecraft/ldlib
+minecraft/local
+minecraft/logs
+minecraft/mods
+minecraft/resourcepacks
+minecraft/saves
+minecraft/schematics
+minecraft/screenshots
+minecraft/server-resource-packs
+minecraft/shaderpacks
+minecraft/texturepacks
+minecraft/*.json
+minecraft.qmenu_opened.marker
+minecraftoptions.txt
+minecrafthotbar.nbt
+
+# specific config files
+minecraftconfig/oculus.properties
+instance.cfg
+
+# bro idk what's up with this shit
+icon.png
+
+# the file said to not include it unless you know
+# what you're doing... guess what
+minecraftrhino.local.properties
