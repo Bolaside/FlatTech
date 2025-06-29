@@ -17,6 +17,7 @@ minecraft/screenshots
 minecraft/server-resource-packs
 minecraft/shaderpacks
 minecraft/texturepacks
+minecraft/xaero
 minecraft/*.json
 minecraft/.qmenu_opened.marker
 minecraft/options.txt
@@ -24,6 +25,7 @@ minecraft/hotbar.nbt
 
 # specific config files
 minecraft/config/oculus.properties
+minecraft/config/xaeropatreon.txt
 instance.cfg
 
 # bro idk what's up with this shit

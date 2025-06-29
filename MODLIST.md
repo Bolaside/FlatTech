@@ -82,5 +82,7 @@
 - [Tempad With Shaders](https://www.curseforge.com/projects/1019300) [1\.0\.0] by Bawnorton
 - [Titanium](https://modrinth.com/mod/1Ro7m06l) [3\.8\.32] by TheCodedOne, Buuz135
 - [ULV Covers Modern](https://www.curseforge.com/projects/984851) [0\.2\.0] by jmoiron
+- [Xaero's Minimap](https://modrinth.com/mod/1bokaNcj) [25\.2\.6] by xaero96
+- [Xaero's World Map](https://modrinth.com/mod/NcUtCpym) [1\.39\.9] by xaero96
 - [Zeta](https://modrinth.com/mod/MVARlG2f) [1\.0\-30] by Vazkii, quat, IThundxr, siuol, wiresegal, MehVahdJukaar
 - [spark](https://modrinth.com/mod/l6YH9Als) [1\.10\.53] by Luck
