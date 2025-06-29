@@ -18,12 +18,12 @@ minecraft/server-resource-packs
 minecraft/shaderpacks
 minecraft/texturepacks
 minecraft/*.json
-minecraft.qmenu_opened.marker
-minecraftoptions.txt
-minecrafthotbar.nbt
+minecraft/.qmenu_opened.marker
+minecraft/options.txt
+minecraft/hotbar.nbt
 
 # specific config files
-minecraftconfig/oculus.properties
+minecraft/config/oculus.properties
 instance.cfg
 
 # bro idk what's up with this shit
