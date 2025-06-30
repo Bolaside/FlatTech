@@ -1,5 +1,12 @@
 ServerEvents.recipes(event => {
-  const getComponent = (component, voltage) => component.getIngredient(GTValues[voltage])
+  const getComponent = (component, voltageIndex) => component.getIngredient(voltageIndex)
+  const tooledMap = itemMap => new Map(Object.assign(itemMap, {
+    "W": "#forge:tools/wrenches",
+    "M": "#forge:tools/mallets",
+    "F": "#forge:tools/files",
+    "S": "#forge:tools/saws",
+    "H": "#forge:tools/hammers"
+  }))
 
   event.shaped("minecraft:cobblestone", ["XX ", "XX "], {
     "X": "kubejs:cobble"
@@ -12,28 +19,27 @@ ServerEvents.recipes(event => {
     .circuit(8)
     .duration(20 * 5)
     .EUt(7)
-  event.shaped("minecraft:furnace", ["CCC", "WSM", "ccc"], {
+
+  event.shaped("minecraft:furnace", ["CCC", "WSM", "ccc"], tooledMap({
     "C": "minecraft:cobblestone",
-    "W": "#forge:tools/wrenches",
     "S": "gtceu:sticky_resin",
-    "M": "#forge:tools/mallets",
     "c": "minecraft:cobblestone_slab"
-  }).id("minecraft:shaped/furnace")
+  })).id("minecraft:shaped/furnace")
 
   event.shaped(`gtceu:ulv_squeezer`, ["CRC", "PHP", "pCp"], {
-    "C": getComponent(CraftingComponent.CABLE, "ULV"),
-    "R": getComponent(CraftingComponent.ROTOR, "ULV"),
-    "H": getComponent(CraftingComponent.HULL, "ULV"),
-    "P": getComponent(CraftingComponent.PISTON, "ULV"),
-    "p": getComponent(CraftingComponent.PUMP, "ULV")
+    "C": getComponent(CraftingComponent.CABLE, GTValues.ULV),
+    "R": getComponent(CraftingComponent.ROTOR, GTValues.ULV),
+    "H": getComponent(CraftingComponent.HULL, GTValues.ULV),
+    "P": getComponent(CraftingComponent.PISTON, GTValues.ULV),
+    "p": getComponent(CraftingComponent.PUMP, GTValues.ULV)
   })
 
   event.shaped("gtceu:ulv_mixer", ["GRG", "GMG", "CHC"], {
-    "G": "minecraft:glass",
-    "R": "gtceu:copper_rotor",
-    "M": "ulvcovm:ulv_electric_motor",
+    "G": getComponent(CraftingComponent.GLASS, GTValues.ULV),
+    "R": getComponent(CraftingComponent.ROTOR, GTValues.ULV),
+    "M": getComponent(CraftingComponent.MOTOR, GTValues.ULV),
     "C": "#gtceu:circuits/ulv",
-    "H": "gtceu:ulv_machine_hull"
+    "H": getComponent(CraftingComponent.HULL, GTValues.ULV)
   }).id("gtceu:shaped/ulv_mixer")
 
   event.remove({ id: /gtceu:compressor\/compress_plate_dust/ })
@@ -42,28 +48,22 @@ ServerEvents.recipes(event => {
     "R": "gtceu:sticky_resin"
   })
 
-  event.shaped("kubejs:empty_squeezer_mold", ["MF ", "SS ", "SS "], {
-    "M": "#forge:tools/mallets",
-    "F": "#forge:tools/files",
+  event.shaped("kubejs:empty_squeezer_mold", ["MF ", "SS ", "SS "], tooledMap({
     "S": "gtceu:wood_plate"
-  })
+  }))
 
   const squeezerMoldRecipe = (name, positions) => {
-    event.shaped(`kubejs:${name}_squeezer_mold`, positions, {
-      "F": "#forge:tools/files",
+    event.shaped(`kubejs:${name}_squeezer_mold`, positions, tooledMap({
       "M": "kubejs:empty_squeezer_mold"
-    }).noMirror().noShrink()
+    })).noMirror().noShrink()
   }
  
   squeezerMoldRecipe("plank", ["   ", "FM ", "   "])
   squeezerMoldRecipe("sieve", [" F ", " M ", "   "])
 
-  event.shaped("gtceu:wood_spring", [" S ", "FRM", " R "], {
-    "S": "#forge:tools/saws",
-    "F": "#forge:tools/files",
+  event.shaped("gtceu:wood_spring", [" S ", "FRM", " R "], tooledMap({
     "R": "gtceu:long_wood_rod",
-    "M": "#forge:tools/mallets"
-  })
+  }))
 
   event.recipes.gtceu.bender("bend_long_stick_to_spring")
     .itemInputs(Item.of("gtceu:long_wood_rod"))
@@ -72,12 +72,9 @@ ServerEvents.recipes(event => {
     .duration(20 * 10)
     .EUt(GTValues.VH[GTValues.LV])
 
-  event.shaped("gtceu:small_wood_spring", [" S ", "FsM"], {
-    "S": "#forge:tools/saws",
-    "F": "#forge:tools/files",
+  event.shaped("gtceu:small_wood_spring", [" S ", "FsM"], tooledMap({
     "s": "minecraft:stick",
-    "M": "#forge:tools/mallets"
-  })
+  }))
 
   event.recipes.gtceu.bender("bend_stick_to_small_spring")
     .itemInputs(Item.of("minecraft:stick"))
@@ -86,21 +83,18 @@ ServerEvents.recipes(event => {
     .duration(Math.round(GTMaterials.Wood.getMass() / 2))
     .EUt(GTValues.VA[GTValues.ULV])
 
-  event.shaped("gtceu:stone_ingot", ["F ", "S "], {
-    "F": "#forge:tools/files",
-    "S": "minecraft:stone"
-  })
+  event.shaped("gtceu:stone_ingot", ["F ", "s "], tooledMap({
+    "s": "minecraft:stone"
+  }))
 
-  event.shaped("gtceu:stone_plate", ["H  ", "S  ", "S  "], {
-    "H": "#forge:tools/hammers",
-    "S": "gtceu:stone_ingot"
-  })
+  event.shaped("gtceu:stone_plate", ["H  ", "i  ", "i  "], tooledMap({
+    "i": "gtceu:stone_ingot"
+  }))
 
-  event.shaped("gtceu:stone_drill_head", ["SWS", "SWS", "WHW"], {
-    "S": "gtceu:stone_plate",
-    "W": "gtceu:wood_plate",
-    "H": "#forge:tools/hammers"
-  }).id("gtceu:shaped/drill_head_stone")
+  event.shaped("gtceu:stone_drill_head", ["sws", "sws", "wHw"], tooledMap({
+    "s": "gtceu:stone_plate",
+    "w": "gtceu:wood_plate"
+  })).id("gtceu:shaped/drill_head_stone")
 
   event.shaped("kubejs:bedrock_ore_extractor", ["HG ", "GTL", " Ls"], {
     "G": "gtceu:stone_gear",
@@ -131,15 +125,12 @@ ServerEvents.recipes(event => {
     "P": "#minecraft:planks"
   })
 
-  event.shaped("gtceu:wood_wrench", ["PMP", " P ", " P "], {
-    "P": "gtceu:wood_plate",
-    "M": "#forge:tools/mallets"
-  }).id("gtceu:shaped/wrench_wood")
+  event.shaped("gtceu:wood_wrench", ["PMP", " P ", " P "], tooledMap({
+    "P": "gtceu:wood_plate"
+  })).id("gtceu:shaped/wrench_wood")
 
-  event.shaped("gtceu:wood_saw", ["PPS", "FMS"], {
+  event.shaped("gtceu:wood_saw", ["PPs", "FMs"], tooledMap({
     "P": "gtceu:wood_plate",
-    "S": "minecraft:stick",
-    "F": "#forge:tools/files",
-    "M": "#forge:tools/mallets"
-  }).id("gtceu:shaped/saw_wood")
+    "s": "minecraft:stick",
+  })).id("gtceu:shaped/saw_wood")
 })
