@@ -25,8 +25,14 @@ minecraft/hotbar.nbt
 
 # specific config files
 minecraft/config/oculus.properties
+minecraft/config/xaerominimap_entities.json
 minecraft/config/xaeropatreon.txt
+minecraft/XaeroWaypoints*
 instance.cfg
+
+# this one is already committed but i won't remove it from the repo
+# because maybe it's important idk what this is anyway asoijoijakgfagkjlgaaeijogrgfkiodlm h
+mmc-pack.json
 
 # bro idk what's up with this shit
 icon.png
