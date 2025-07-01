@@ -15,7 +15,10 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTToolType.DRILL_IV
   ]
 
-  GTMaterials.Wood.addFlags(GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_SPRING_SMALL)
+  GTMaterials.Wood.addFlags(
+    GTMaterialFlags.GENERATE_SPRING,
+    GTMaterialFlags.GENERATE_SPRING_SMALL
+  )
   GTMaterials.Stone.addFlags(GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_GEAR)
 
   if (GTMaterials.Wood.hasProperty(PropertyKey.TOOL)) {
