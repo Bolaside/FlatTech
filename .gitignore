@@ -33,4 +33,4 @@ icon.png
 
 # the file said to not include it unless you know
 # what you're doing... guess what
-minecraftrhino.local.properties
+minecraft/rhino.local.properties
