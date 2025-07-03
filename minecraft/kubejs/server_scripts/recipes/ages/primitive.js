@@ -1,12 +1,28 @@
 ServerEvents.recipes(event => {
   const getComponent = (component, voltageIndex) => component.getIngredient(voltageIndex)
-  const tooledMap = itemMap => new Map(Object.assign(itemMap, {
+  const toolMap = {
     "W": "#forge:tools/wrenches",
     "M": "#forge:tools/mallets",
     "F": "#forge:tools/files",
     "S": "#forge:tools/saws",
     "H": "#forge:tools/hammers"
-  }))
+  }
+
+  /**
+   * @author vomiter, KonSola5
+   * @param {OutputItem_} output 
+   * @param {Array<string>} pattern 
+   * @param {Record<string, InputItem_>} itemMap 
+   */
+  const tooledCrafting = (output, pattern, itemMap) => {
+    const usedKeys = pattern.join("")
+
+    for (const key of usedKeys) {
+      itemMap[key] = itemMap[key] || toolMap[key]
+    }
+
+    return event.shaped(output, pattern, itemMap)
+  }
 
   event.shaped("minecraft:cobblestone", ["XX ", "XX "], {
     "X": "kubejs:cobble"
@@ -20,11 +36,11 @@ ServerEvents.recipes(event => {
     .duration(20 * 5)
     .EUt(7)
 
-  event.shaped("minecraft:furnace", ["CCC", "WSM", "ccc"], tooledMap({
+  tooledCrafting("minecraft:furnace", ["CCC", "WSM", "ccc"], {
     "C": "minecraft:cobblestone",
     "S": "gtceu:sticky_resin",
     "c": "minecraft:cobblestone_slab"
-  })).id("minecraft:shaped/furnace")
+  }).id("minecraft:shaped/furnace")
 
   event.shaped(`gtceu:ulv_squeezer`, ["CRC", "PHP", "pCp"], {
     "C": getComponent(CraftingComponent.CABLE, GTValues.ULV),
@@ -48,22 +64,22 @@ ServerEvents.recipes(event => {
     "R": "gtceu:sticky_resin"
   })
 
-  event.shaped("kubejs:empty_squeezer_mold", ["MF ", "SS ", "SS "], tooledMap({
+  tooledCrafting("kubejs:empty_squeezer_mold", ["MF ", "SS ", "SS "], {
     "S": "gtceu:wood_plate"
-  }))
+  })
 
   const squeezerMoldRecipe = (name, positions) => {
-    event.shaped(`kubejs:${name}_squeezer_mold`, positions, tooledMap({
+    tooledCrafting(`kubejs:${name}_squeezer_mold`, positions, {
       "M": "kubejs:empty_squeezer_mold"
-    })).noMirror().noShrink()
+    }).noMirror().noShrink()
   }
  
   squeezerMoldRecipe("plank", ["   ", "FM ", "   "])
   squeezerMoldRecipe("sieve", [" F ", " M ", "   "])
 
-  event.shaped("gtceu:wood_spring", [" S ", "FRM", " R "], tooledMap({
+  tooledCrafting("gtceu:wood_spring", [" S ", "FRM", " R "], {
     "R": "gtceu:long_wood_rod",
-  }))
+  })
 
   event.recipes.gtceu.bender("bend_long_stick_to_spring")
     .itemInputs(Item.of("gtceu:long_wood_rod"))
@@ -72,9 +88,9 @@ ServerEvents.recipes(event => {
     .duration(20 * 10)
     .EUt(GTValues.VH[GTValues.LV])
 
-  event.shaped("gtceu:small_wood_spring", [" S ", "FsM"], tooledMap({
+  tooledCrafting("gtceu:small_wood_spring", [" S ", "FsM"], {
     "s": "minecraft:stick",
-  }))
+  })
 
   event.recipes.gtceu.bender("bend_stick_to_small_spring")
     .itemInputs(Item.of("minecraft:stick"))
@@ -83,18 +99,18 @@ ServerEvents.recipes(event => {
     .duration(Math.round(GTMaterials.Wood.getMass() / 2))
     .EUt(GTValues.VA[GTValues.ULV])
 
-  event.shaped("gtceu:stone_ingot", ["F ", "s "], tooledMap({
+  tooledCrafting("gtceu:stone_ingot", ["F ", "s "], {
     "s": "minecraft:stone"
-  }))
+  })
 
-  event.shaped("gtceu:stone_plate", ["H  ", "i  ", "i  "], tooledMap({
+  tooledCrafting("gtceu:stone_plate", ["H  ", "i  ", "i  "], {
     "i": "gtceu:stone_ingot"
-  }))
+  })
 
-  event.shaped("gtceu:stone_drill_head", ["sws", "sws", "wHw"], tooledMap({
+  tooledCrafting("gtceu:stone_drill_head", ["sws", "sws", "wHw"], {
     "s": "gtceu:stone_plate",
     "w": "gtceu:wood_plate"
-  })).id("gtceu:shaped/drill_head_stone")
+  }).id("gtceu:shaped/drill_head_stone")
 
   event.shaped("kubejs:bedrock_ore_extractor", ["HG ", "GTL", " Ls"], {
     "G": "gtceu:stone_gear",
@@ -125,12 +141,12 @@ ServerEvents.recipes(event => {
     "P": "#minecraft:planks"
   })
 
-  event.shaped("gtceu:wood_wrench", ["PMP", " P ", " P "], tooledMap({
+  tooledCrafting("gtceu:wood_wrench", ["PMP", " P ", " P "], {
     "P": "gtceu:wood_plate"
-  })).id("gtceu:shaped/wrench_wood")
+  }).id("gtceu:shaped/wrench_wood")
 
-  event.shaped("gtceu:wood_saw", ["PPs", "FMs"], tooledMap({
+  tooledCrafting("gtceu:wood_saw", ["PPs", "FMs"], {
     "P": "gtceu:wood_plate",
     "s": "minecraft:stick",
-  })).id("gtceu:shaped/saw_wood")
+  }).id("gtceu:shaped/saw_wood")
 })
