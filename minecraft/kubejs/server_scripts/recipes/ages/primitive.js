@@ -149,4 +149,16 @@ ServerEvents.recipes(event => {
     "P": "gtceu:wood_plate",
     "s": "minecraft:stick",
   }).id("gtceu:shaped/saw_wood")
+
+  tooledCrafting("2x kubejs:ferrolead_casing", ["PHP", "PfP", "PWP"], {
+    "P": "gtceu:lead_plate",
+    "f": "gtceu:iron_frame"
+  })
+
+  event.recipes.gtceu.assembler("casing_ferrolead")
+    .itemInputs(Item.of("gtceu:lead_plate", 6), Item.of("gtceu:iron_frame"))
+    .itemOutputs(Item.of("kubejs:ferrolead_casing", 2))
+    .circuit(6)
+    .duration(20 * 2.5)
+    .EUt(GTValues.VH[GTValues.LV])
 })

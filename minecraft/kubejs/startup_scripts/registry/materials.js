@@ -20,6 +20,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterialFlags.GENERATE_SPRING_SMALL
   )
   GTMaterials.Stone.addFlags(GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_GEAR)
+  GTMaterials.Iron.addFlags(GTMaterialFlags.GENERATE_FRAME)
 
   if (GTMaterials.Wood.hasProperty(PropertyKey.TOOL)) {
     GTMaterials.Wood.getProperties().removeProperty(PropertyKey.TOOL)
