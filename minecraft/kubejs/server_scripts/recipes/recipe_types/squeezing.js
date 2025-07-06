@@ -8,8 +8,7 @@ ServerEvents.recipes(event => {
     .duration(20 * 3)
 
   event.recipes.gtceu.squeezing("squeeze_wood_plate")
-    .itemInputs(Ingredient.of("#minecraft:planks")
-      .subtract(Ingredient.of(["#forge:treated_wood", "#forge:plates"])))
+    .itemInputs(Ingredient.of("#minecraft:planks"))
     .chancedInput("kubejs:plank_squeezer_mold", 2500, 0)
     .itemOutputs(Item.of("gtceu:wood_plate"))
     .EUt(GTValues.VH[GTValues.ULV])
