@@ -134,6 +134,7 @@
 				item: "minecraft:cobblestone"
 				type: "item"
 			}]
+			subtitle: "Ignore the mining level..."
 			tasks: [
 				{
 					id: "5E4F79AD41EB1E64"
@@ -210,7 +211,7 @@
 					type: "item"
 				}
 			]
-			title: "Wooden Tools Vol. 1"
+			title: "Wooden Tools"
 			x: 4.5d
 			y: -3.0d
 		}
@@ -255,11 +256,7 @@
 				"65075EADD5864ED6"
 				"60F1003D2F2D978C"
 			]
-			description: [
-				"Chisel some stone with a file into an ingot, and you get yourself a better tool component!"
-				""
-				"You should definitely batch craft this, plates are not cheap right now."
-			]
+			description: ["Chisel some stone with a file into an ingot, and you get yourself a better tool component!"]
 			id: "112C3D1EC1B46B29"
 			rewards: [{
 				count: 8
