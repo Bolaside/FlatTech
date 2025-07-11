@@ -291,6 +291,23 @@
 			x: 3.0d
 			y: -2.0d
 		}
+		{
+			description: [
+				"Pretty cool mod that lets you see the texture up close. Unfortunately, doesn't work in the recipe editor, only inventory."
+				""
+				"To toggle it, the default keybind is Shift + Z."
+			]
+			disable_toast: true
+			id: "160DA7A2107237CC"
+			optional: true
+			tasks: [{
+				id: "17BBFC51C53E8353"
+				title: "Item Zoom"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
 	]
 	title: "Primitive"
 }
