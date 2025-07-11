@@ -9,3 +9,5 @@ i have no idea what i'm doing
 monifactory - dark mode shader blacklist and the glowstone chemical formula
 
 cech12 - wooden shears texture
+
+[vanilla tweaks](https://vanillatweaks.net/) - bedrock menu tiles
