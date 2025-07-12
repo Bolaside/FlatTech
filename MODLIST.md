@@ -26,7 +26,6 @@
 - [DarkModeEverywhere](https://modrinth.com/mod/k3lrwGqk) [1\.20\.1\-1\.2\.4] by Buuz135
 - [Default World Type](https://modrinth.com/mod/kZvO1mDq) [1\.20\.1\-4\.0\.4] by MelanX
 - [EMI](https://modrinth.com/mod/fRiHVvU7) [1\.1\.22\+1\.20\.1\+forge] by Emi
-- [EMI Loot](https://modrinth.com/mod/qbbO7Jns) [0\.7\.6\+1\.20\.1\+forge] by fzzyhmstrs, lxly9 \(art\), unilock \(ports\)
 - [Easy Anvils](https://modrinth.com/mod/OZBR5JT5) [8\.0\.2] by Fuzs
 - [Embeddium](https://modrinth.com/mod/sk9rgfiA) [0\.3\.31\+mc1\.20\.1] by embeddedt
 - [ExtendedAE](https://modrinth.com/mod/JiOqfoFM) [1\.20\-1\.1\.11\-forge] by GlodBlock
@@ -35,8 +34,8 @@
 - [FTB Quests](https://www.curseforge.com/projects/289412) [2001\.4\.13] by FTB Team
 - [FTB Teams](https://www.curseforge.com/projects/404468) [2001\.3\.1] by FTB Team
 - [Fast Backups](https://modrinth.com/mod/ZHKrK8Rp) [0\.15\.2\+1\.20\.1\-prerelease] by pcal
-- [Fast Scrolling](https://modrinth.com/mod/JZKbCCSk) [2\.0\.1] by Snownee
 - [Ferrite Core](https://modrinth.com/mod/uXXizFIs) [6\.0\.1] by malte0811
+- [Flux Networks](https://www.curseforge.com/projects/248020) [7\.2\.1\.15] by Sonar Sonic, BloCamLimb
 - [FramedBlocks](https://modrinth.com/mod/wbgfS34j) [9\.4\.1] by XFactHD
 - [Freecam](https://modrinth.com/mod/XeEZ3fK2) [1\.2\.1\+1\.20] by hashalite
 - [Functional Storage](https://modrinth.com/mod/cO40ZIg3) [1\.20\.1\-1\.2\.12] by Buuz135, Rid
@@ -67,11 +66,11 @@
 - [No Telemetry](https://modrinth.com/mod/hg77g4Pw) [1\.9\.0] by kb1000
 - [Notes](https://modrinth.com/mod/ko8Qabo1) [1\.20\.1\-1\.3\.0\-forge] by ChaosTheDude
 - [Oculus](https://modrinth.com/mod/GchcoXML) [1\.8\.0] by NanoLive, dima\_dencep, coderbot, IMS212, Justsnoopy30, FoundationGames
-- [Panorama Screens](https://modrinth.com/mod/4k0QM1rC) [1\.0\+forge\+mc1\.20] by juancarloscp52 \(Im\_JC\)
 - [Pick Up Notifier](https://modrinth.com/mod/ZX66K16c) [8\.0\.0] by Fuzs
 - [ProbeJS](https://modrinth.com/mod/JJNYRb4B) [6\.0\.0] by Prunoideae
 - [Puzzles Lib](https://modrinth.com/mod/QAGBst4M) [8\.1\.32] by Fuzs
 - [Quark](https://modrinth.com/mod/qnQsVE2z) [4\.0\-462] by Vazkii, WireSegal, MCVinnyq, Sully
+- [Rapid Leaf Decay](https://modrinth.com/mod/jSQXzmcf) [2\.0\.2] by GeheimagentNr1
 - [Remove Reloading Screen](https://modrinth.com/mod/ZP7xHXtw) [4\.0\.6\.1\+mc1\.20\.1\-forge] by dima\_dencep
 - [Resourceful Lib](https://modrinth.com/mod/G1hIVOrD) [2\.1\.29] by ThatGravyBoat, Epic\_Oreo
 - [Resourcefulconfig](https://modrinth.com/mod/M1953qlQ) [2\.1\.3]
