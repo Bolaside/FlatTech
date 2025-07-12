@@ -149,4 +149,21 @@ ServerEvents.recipes(event => {
     "P": "gtceu:wood_plate",
     "s": "minecraft:stick",
   }).id("gtceu:shaped/saw_wood")
+
+  event.recipes.gtceu.assembler("coil_tin_alloy")
+    .itemInputs(Item.of("gtceu:tin_alloy_double_wire", 8), Item.of("gtceu:tin_foil", 8))
+    .inputFluids(Fluid.of("gtceu:lead", 144))
+    .itemOutputs(Item.of("kubejs:tin_alloy_coil_block"))
+    .duration(20 * 5)
+    .EUt(GTValues.VA[GTValues.ULV])
+  
+  // the wrought iron recipe is replaced so it doesn't need removing
+  event.remove({ id: "gtceu:electric_blast_furnace/steel_from_iron" })
+  event.recipes.gtceu.electric_blast_furnace("steel_from_wrought_iron")
+    .itemInputs(Item.of("gtceu:wrought_iron_ingot"), Item.of("gtceu:carbon_dust", 3))
+    .itemOutputs(Item.of("gtceu:steel_ingot"))
+    .chancedOutput(Item.of("gtceu:dark_ash_dust"), 1500, 0)
+    .blastFurnaceTemp(1000)
+    .duration(20 * 30)
+    .EUt(GTValues.VA[GTValues.LV])
 })

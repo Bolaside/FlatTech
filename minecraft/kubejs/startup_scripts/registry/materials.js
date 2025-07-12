@@ -1,18 +1,12 @@
 // not sure if i wanna have all materials here but i'll sort it later ig
 const $ToolProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.ToolProperty")
+const $WireProperties = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.WireProperties")
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
   const newTools = [
     GTToolType.SAW,
     GTToolType.FILE,
     GTToolType.WRENCH
-  ]
-  const drills = [
-    GTToolType.DRILL_LV,
-    GTToolType.DRILL_MV,
-    GTToolType.DRILL_HV,
-    GTToolType.DRILL_EV,
-    GTToolType.DRILL_IV
   ]
 
   GTMaterials.Wood.addFlags(
@@ -25,14 +19,15 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Wood.getProperties().removeProperty(PropertyKey.TOOL)
   }
 
-  GTMaterials.Wood.setProperty(
-    PropertyKey.TOOL,
-    new $ToolProperty(1, 1, 128, 1, newTools.concat(GTToolType.SOFT_MALLET))
-  )
-  GTMaterials.Stone.setProperty(
-    PropertyKey.TOOL,
-    new $ToolProperty(1.5, 2, 192, 1, newTools.concat(drills, GTToolType.HARD_HAMMER))
-  )
+  GTMaterials.Wood.setProperty(PropertyKey.TOOL, new $ToolProperty(
+    1, 1, 128, 1, newTools.concat(GTToolType.SOFT_MALLET)
+  ))
+  GTMaterials.Stone.setProperty(PropertyKey.TOOL, new $ToolProperty(
+    1.5, 2, 192, 1, newTools.concat(GTToolType.DRILL_LV, GTToolType.HARD_HAMMER)
+  ))
+  GTMaterials.TinAlloy.setProperty(PropertyKey.WIRE, new $WireProperties(
+    GTValues.V[GTValues.LV], 1, 4
+  ))
 
   event.create("redstone_glowstone_mixture")
     .liquid(new GTFluidBuilder().temperature(850))
