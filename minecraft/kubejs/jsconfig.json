@@ -2,7 +2,8 @@
     "compilerOptions": {
         "lib": [
             "ES5",
-            "ES2015"
+            "ES2015",
+            "ES2017.Object"
         ],
         "rootDirs": [
             "probe/generated",
@@ -11,6 +12,13 @@
             "startup_scripts",
             "client_scripts"
         ],
+        "typeRoots": [
+            "./probe/generated",
+            "./probe/user"
+        ],
+        "skipLibCheck": false,
+        "disableSizeLimit": true,
+        "noEmit": true,
         "target": "ES2015"
     }
 }

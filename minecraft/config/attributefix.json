@@ -1,5 +1,16 @@
 {
   "attributes": {
+    "forge:step_height_addition": {
+      "enabled": false,
+      "min": {
+        "default": -512,
+        "value": -512
+      },
+      "max": {
+        "default": 512,
+        "value": 512
+      }
+    },
     "minecraft:generic.follow_range": {
       "enabled": true,
       "min": {

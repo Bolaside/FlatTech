@@ -23,10 +23,11 @@ minecraft/.qmenu_opened.marker
 minecraft/options.txt
 minecraft/hotbar.nbt
 
-# specific config files
+# specific config files/directories
 minecraft/config/darkmodeeverywhereshaders.json
 minecraft/config/embeddium*
 minecraft/config/ibeeditor*
+miencraft/config/ItemLocks
 minecraft/config/oculus.properties
 minecraft/config/xaerominimap_entities.json
 minecraft/config/xaeropatreon.txt

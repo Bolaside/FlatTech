@@ -39,6 +39,30 @@
 		max_command_chain_length = 65536
 		#Whether the debug screen shows all or reduced information; and whether the effects of F3+B (entity hitboxes) and F3+G (chunk boundaries) are shown.
 		reduced_debug_info = false
+		#Non Vanilla gamerule: 'canPickupClaimedItems'
+		can_pickup_claimed_items = false
+		#Non Vanilla gamerule: 'claimedMobGriefing'
+		claimed_mob_griefing = false
+		#Non Vanilla gamerule: 'doClaimedBlockBreaking'
+		do_claimed_block_breaking = false
+		#Non Vanilla gamerule: 'doClaimedBlockExplosions'
+		do_claimed_block_explosions = false
+		#Non Vanilla gamerule: 'doClaimedBlockInteractions'
+		do_claimed_block_interactions = false
+		#Non Vanilla gamerule: 'doClaimedBlockPlacing'
+		do_claimed_block_placing = false
+		#Non Vanilla gamerule: 'doClaimedDamageEntities'
+		do_claimed_damage_entities = false
+		#Non Vanilla gamerule: 'doClaimedEntityInteractions'
+		do_claimed_entity_interactions = false
+		#Non Vanilla gamerule: 'doCombinedClaimLimit'
+		do_combined_claim_limit = false
+		#Non Vanilla gamerule: 'maxChunkLoaded'
+		#Range: > 0
+		max_chunk_loaded = 4096
+		#Non Vanilla gamerule: 'maxClaimedChunks'
+		#Range: > 0
+		max_claimed_chunks = 16384
 
 	[gamerules.player]
 		#Whether the server should skip checking player speed when the player is wearing elytra. Often helps with jittering due to lag in multiplayer.
