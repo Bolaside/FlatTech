@@ -7,10 +7,7 @@ BlockEvents.rightClicked(event => {
     const pos = [x, y, z].join(" ")
 
     block.blockState.block.advanceTree(
-      event.level,
-      block.pos,
-      block.blockState,
-      event.level.random
+      event.level, block.pos, block.blockState, event.level.random
     )
     // summon 32 composter particles at the block in a 1.6^3 cube
     // cause apparently the radius is multiplied by 8

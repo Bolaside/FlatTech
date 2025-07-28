@@ -1,8 +1,8 @@
 ServerEvents.recipes(event => {
   const insulation = [
-    Fluid.of("gtceu:rubber", 144),
-    Fluid.of("gtceu:silicone_rubber", 144/2),
-    Fluid.of("gtceu:styrene_butadiene_rubber", 144/4)
+    Fluid.of("gtceu:rubber", GTValues.L),
+    Fluid.of("gtceu:silicone_rubber", GTValues.L/2),
+    Fluid.of("gtceu:styrene_butadiene_rubber", GTValues.L/4)
   ]
 
   event.remove({ id: /ae2:network\/cables/ })
@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
     .itemInputs(Item.of("ae2:fluix_crystal"))
     .itemOutputs(Item.of("ae2:fluix_glass_cable", 4))
     .duration(20 * 5)
-    .EUt(4)
+    .EUt(GTValues.VH[GTValues.ULV])
 
   insulation.forEach(rubber => {
     const rubberName = rubber.id.split(":")[1]
@@ -24,23 +24,28 @@ ServerEvents.recipes(event => {
       .inputFluids(rubber)
       .itemOutputs(Item.of("ae2:fluix_covered_cable"))
       .duration(20 * 5)
-      .EUt(7)
+      .EUt(GTValues.VA[GTValues.ULV])
   })
  
   event.recipes.gtceu.mixer("redstone_glowstone_mixture")
-    .inputFluids([Fluid.of("gtceu:glowstone", 144), Fluid.of("gtceu:redstone", 144)])
+    .inputFluids([
+      Fluid.of("gtceu:glowstone", GTValues.L),
+      Fluid.of("gtceu:redstone", GTValues.L)
+    ])
     .outputFluids(Fluid.of("gtceu:redstone_glowstone_mixture", 288))
     .duration(20 * 4)
-    .EUt(16)
+    .EUt(GTValues.VH[GTValues.LV])
 
   event.recipes.gtceu.assembler("cover_fluix_covered_cable")
-    .itemInputs(Item.of("ae2:fluix_covered_cable", 1))
-    .inputFluids(Fluid.of("gtceu:redstone_glowstone_mixture", 144/2))
-    .itemOutputs(Item.of("ae2:fluix_smart_cable", 1))
+    .itemInputs(Item.of("ae2:fluix_covered_cable"))
+    .inputFluids(Fluid.of("gtceu:redstone_glowstone_mixture", GTValues.L/2))
+    .itemOutputs(Item.of("ae2:fluix_smart_cable"))
     .duration(20 * 3)
-    .EUt(24)
+    .EUt(GTValues.VA[GTValues.LV])
 
-  // chemical bath dyeing recipes, they use 2x less dyes than crafting
+  /**
+   * @param {CableType} cableType
+   */
   const getAllColoredCableIds = cableType => {
     const cables = Ingredient.of(`#ae2:${cableType}_cable`).itemIds
     cables.remove(`ae2:fluix_${cableType}_cable`)
@@ -48,6 +53,9 @@ ServerEvents.recipes(event => {
     return cables
   }
 
+  /**
+   * @param {string} cableId
+   */
   const getCableColor = cableId => {
     const start = cableId.indexOf(":") + 1
     const end = cableId.indexOf("_")
@@ -55,9 +63,14 @@ ServerEvents.recipes(event => {
     return cableId.substring(start, end)
   }
 
-  const makeDyeingRecipes = cableType => {
+  /**
+   * makes chemical bath dyeing recipes, they
+   * use 2x less dyes than crafting
+   * @param {CableType} cableType
+   */
+  const makeDyeRecipes = cableType => {
     const cableIds = getAllColoredCableIds(cableType)
-    const dyeAmount = cableType.endsWith("dense") ? 144/4 : 144/16
+    const dyeAmount = cableType.endsWith("dense") ? GTValues.L/4 : GTValues.L/16
 
     cableIds.forEach(cable => {
       const cableColor = getCableColor(cable)
@@ -69,10 +82,13 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of(`gtceu:${cableColor}_dye`, dyeAmount))
         .itemOutputs(Item.of(cable))
         .duration(20)
-        .EUt(7)
+        .EUt(GTValues.VA[GTValues.ULV])
     })
   }
 
+  /**
+   * @param {CableType} cableType
+   */
   const makeUndyeRecipe = cableType => {
     event.recipes.gtceu.chemical_bath(`decolor_${cableType}_cable`)
       .category(GTRecipeCategories.CHEM_DYES)
@@ -83,7 +99,6 @@ ServerEvents.recipes(event => {
       .EUt(2)
   }
 
-  const cableTypes = ["glass", "covered", "covered_dense", "smart", "smart_dense"]
-  cableTypes.forEach(cableType => makeDyeingRecipes(cableType))
-  cableTypes.forEach(cableType => makeUndyeRecipe(cableType))
+  FTValues.ME_CABLE_TYPES.forEach(cableType => makeDyeRecipes(cableType))
+  FTValues.ME_CABLE_TYPES.forEach(cableType => makeUndyeRecipe(cableType))
 })
