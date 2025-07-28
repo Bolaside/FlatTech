@@ -6,6 +6,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
       builder
         .langValue(`${GTValues.VLVH[tier]} Mixer`)
         .recipeType(GTRecipeTypes.MIXER_RECIPES)
-        .workableTieredHullRenderer(`gtceu:block/machines/mixer`)
+        .workableTieredHullModel(`gtceu:block/machines/mixer`)
     })
 })

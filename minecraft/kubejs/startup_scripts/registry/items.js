@@ -11,4 +11,6 @@ StartupEvents.registry("item", event => {
   event.create("plank_squeezer_mold")
 
   event.create("ulv_field_generator")
+
+  event.create("ferrous_mineral")
 })
