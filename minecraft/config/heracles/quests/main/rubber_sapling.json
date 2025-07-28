@@ -1,0 +1,75 @@
+{
+  "dependencies": [
+    "inception"
+  ],
+  "tasks": {
+    "Rubber Sapling": {
+      "type": "heracles:item",
+      "item": "gtceu:rubber_sapling",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "Axe": {
+      "item": {
+        "id": "gtceu:vanadium_steel_axe",
+        "count": 1,
+        "nbt": {
+          "DisallowContainerItem": 0,
+          "GT.Behaviours": {
+            "DisableShields": 1,
+            "TreeFelling": 1
+          },
+          "HideFlags": 2,
+          "GT.Tool": {
+            "MaxDamage": 1535,
+            "Damage": 0
+          }
+        }
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "translate": "Your only wood type... for a while"
+    },
+    "description": [
+      "<h1>Rubber Sapling</h1>",
+      "---",
+      "<text>Time to start tearing the terrain apart! Break <green>grass blocks</green> without a tool for a chance to get a <green>rubber sapling</green>.</text>",
+      "",
+      "<text>Then, press <dark_gray>[<keybind>key.sneak</keybind> + <keybind>key.use</keybind>]</dark_gray> to grow the tree <bold>instantly</bold>, no twerking :D</text>",
+      "",
+      "<text>You will get a <gray>[<item item=\"gtceu:vanadium_steel_axe\"></item>]</gray> as a reward, that should hopefully last you until you can automate wood!</text>"
+    ],
+    "groups": {
+      "Main": {
+        "position": [
+          40,
+          -40
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "gtceu:rubber_sapling",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png",
+    "title": {
+      "translate": "Rubber Sapling"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

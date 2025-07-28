@@ -1,0 +1,53 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "Check": {
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "Thank you for playing"
+    },
+    "description": [
+      "<h1 color=\"#00ffff\">Inception</h1>",
+      "<text color=\"gray\">real ones know why it's exactly that color (no it's not GT)</text>",
+      "---",
+      "<text>Welcome to <color color=\"#555555\">F</color><color color=\"#55504b\">l</color><color color=\"#554c41\">a</color><color color=\"#554737\">t</color><color color=\"#54422e\">T</color><color color=\"#543d24\">e</color><color color=\"#54391a\">c</color><color color=\"#543410\">h</color>, a <aqua>GregTech</aqua> modpack on a superflat world!</text>",
+      "",
+      "Not sure what else to put here, so here's a legend on what some of the colored things mean in quest descriptions:",
+      "<ul>",
+      "    <li><text><dark_gray>[<keybind>key.jump</keybind>]</dark_gray>: Dark gray brackets are keybinds. Try changing your jump key, and this will update!</text></li>",
+      "    <li><text><gray>[<item item=\"minecraft:grass_block\"></item>]</gray>: Gray brackets are items, hover to see the tooltip you'd see in your inventory.</text></li>",
+      "</ul>"
+    ],
+    "groups": {
+      "Main": {
+        "position": [
+          0,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:grass_block",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png",
+    "title": {
+      "translate": "Inception"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}
