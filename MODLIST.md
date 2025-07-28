@@ -10,6 +10,7 @@
 - [Better Brightness Slider](https://www.curseforge.com/projects/685037) [1\.0] by LaidBackSloth
 - [Better ModList](https://www.curseforge.com/projects/1089803) [0\.1\.12] by foxy, Prospector, haykam821, TerraformersMC
 - [CalcMod](https://www.curseforge.com/projects/655772) [1\.3\.0] by jsa2025
+- [ClientSort](https://www.curseforge.com/projects/1049891) [2\.0\.0\-beta\.10\+1\.20\.1] by NotRyken
 - [Cloth Config v10 API](https://www.curseforge.com/projects/348521) [11\.1\.136] by shedaniel
 - [Clumps](https://www.curseforge.com/projects/256717) [12\.0\.0\.4] by Jaredlll08
 - [Collective](https://www.curseforge.com/projects/342584) [8\.3] by Rick South
@@ -72,8 +73,8 @@
 - [Tempad](https://www.curseforge.com/projects/514923) [2\.3\.4] by CodexAdrian
 - [Tempad With Shaders](https://www.curseforge.com/projects/1019300) [1\.0\.0] by Bawnorton
 - [Titanium](https://www.curseforge.com/projects/287342) [3\.8\.32] by TheCodedOne, Buuz135
-- [Xaero's Minimap](https://www.curseforge.com/projects/263420) [25\.2\.6] by xaero96
-- [Xaero's World Map](https://www.curseforge.com/projects/317780) [1\.39\.9] by xaero96
+- [Xaero's Minimap](https://www.curseforge.com/projects/263420) [25\.2\.10] by xaero96
+- [Xaero's World Map](https://www.curseforge.com/projects/317780) [1\.39\.12] by xaero96
 - [Zeta](https://www.curseforge.com/projects/968868) [1\.0\-30] by Vazkii, quat, IThundxr, siuol, wiresegal, MehVahdJukaar
 - ProbeJS [6\.0\.1] by Prunoideae
 - [spark](https://www.curseforge.com/projects/361579) [1\.10\.53] by Luck
