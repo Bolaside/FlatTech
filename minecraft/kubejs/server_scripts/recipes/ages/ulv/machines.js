@@ -15,32 +15,21 @@ ServerEvents.recipes(event => {
     "c": "minecraft:cobblestone_slab"
   }).id("minecraft:shaped/furnace")
 
-  recipeBuilder.componentCrafting({
-    voltages: ["ULV"],
-    baseId: "gtceu:%s_squeezer",
-    pattern: ["CRC", "PHP", "pCp"],
-    itemMap: {
-      "C": GTCraftingComponents.CABLE,
-      "R": GTCraftingComponents.ROTOR,
-      "H": GTCraftingComponents.HULL,
-      "P": GTCraftingComponents.PISTON,
-      "p": GTCraftingComponents.PUMP
-    }
+  event.shaped("gtceu:ulv_squeezer", ["CRC", "PHP", "pCp"], {
+    "C": "gtceu:lead_single_cable",
+    "R": "gtceu:copper_rotor",
+    "H": "gtceu:ulv_machine_hull",
+    "P": "ulvcovm:ulv_electric_piston",
+    "p": "ulvcovm:ulv_electric_pump"
   })
 
-  recipeBuilder.componentCrafting({
-    voltages: ["ULV"],
-    baseId: "gtceu:%s_mixer",
-    pattern: ["GRG", "GMG", "CHC"],
-    itemMap: {
-      "G": GTCraftingComponents.GLASS,
-      "R": GTCraftingComponents.ROTOR,
-      "M": GTCraftingComponents.MOTOR,
-      "C": GTCraftingComponents.CIRCUIT,
-      "H": GTCraftingComponents.HULL
-    },
-    recipeBaseId: "gtceu:shaped/%s_mixer"
-  })
+  event.shaped("gtceu:ulv_mixer", ["GRG", "GMG", "CHC"], {
+    "G": "minecraft:glass",
+    "R": "gtceu:copper_rotor",
+    "M": "ulvcovm:ulv_electric_motor",
+    "C": "#gtceu:circuits/ulv",
+    "H": "gtceu:ulv_machine_hull"
+  }).id("gtceu:shaped/ulv_mixer")
 
   event.remove({ output: /gtceu:.*solar_panel/ })
 

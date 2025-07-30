@@ -1,30 +1,17 @@
 ServerEvents.recipes(event => {
-  const recipeBuilder = RecipeBuilder(event)
+  // shoutout to MinerRisko
+  event.shaped("gtceu:mv_super_chest", ["CPC", "PcP", "CFC"], {
+    "C": "#gtceu:circuits/mv",
+    "P": "gtceu:aluminium_plate",
+    "c": "gtceu:aluminium_crate",
+    "F": "kubejs:ulv_field_generator"
+  }).id("gtceu:shaped/super_chest_mv")
 
-  recipeBuilder.componentCrafting({
-    voltages: ["MV"],
-    baseId: "gtceu:%s_super_chest",
-    pattern: ["CPC", "PcP", "CFC"],
-    itemMap: {
-      "C": GTCraftingComponents.CIRCUIT,
-      "P": GTCraftingComponents.PLATE,
-      "c": GTCraftingComponents.CRATE,
-      "F": GTCraftingComponents.FIELD_GENERATOR
-    },
-    recipeBaseId: "gtceu:shaped/super_chest_%s"
-  })
-
-  recipeBuilder.componentCrafting({
-    voltages: ["MV"],
-    baseId: "gtceu:%s_super_tank",
-    pattern: ["CFC", "PcP", "CpC"],
-    itemMap: {
-      "C": GTCraftingComponents.CIRCUIT,
-      "F": GTCraftingComponents.FIELD_GENERATOR,
-      "P": GTCraftingComponents.PLATE,
-      "c": "gtceu:%s_hermetic_casing",
-      "p": GTCraftingComponents.PUMP
-    },
-    recipeBaseId: "gtceu:shaped/super_tank_%s"
-  })
+  event.shaped("gtceu:mv_super_tank", ["CFC", "PcP", "CpC"], {
+    "C": "#gtceu:circuits/mv",
+    "F": "kubejs:ulv_field_generator",
+    "P": "gtceu:aluminium_plate",
+    "c": "gtceu:mv_hermetic_casing",
+    "p": "gtceu:mv_electric_pump"
+  }).id("gtceu:shaped/super_chest_mv")
 })

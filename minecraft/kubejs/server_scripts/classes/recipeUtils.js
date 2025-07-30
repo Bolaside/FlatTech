@@ -35,14 +35,5 @@ const RecipeUtils = {
     }
 
     return record
-  },
-
-  /**
-   * shorthand for replacing %s with a lowercase voltage
-   * @param {string} id
-   * @param {VoltageName} voltage
-   */
-  voltageId: (id, voltage) => {
-    return id.replace("%s", voltage.toLowerCase())
   }
 }
