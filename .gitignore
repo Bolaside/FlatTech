@@ -5,6 +5,7 @@
 
 !index.toml
 !pack.toml
+!*.md
 
 # kubejs
 !/kubejs/
