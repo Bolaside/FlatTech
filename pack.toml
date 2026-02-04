@@ -1,0 +1,13 @@
+name = "FlatTech"
+author = "Thornium"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "281f2260838b607e571ae1cdb7d5e66e0b4febda8f42ae84a80c1e230fb2a58f"
+
+[versions]
+forge = "47.4.4"
+minecraft = "1.20.1"

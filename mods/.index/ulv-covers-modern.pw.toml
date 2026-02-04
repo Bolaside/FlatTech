@@ -1,0 +1,16 @@
+filename = 'ulvcovm-0.3.2.jar'
+name = 'ULV Covers Modern'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '2abcd5751dd4b8dc0334c286f5eb75a2b6297173'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6842815
+project-id = 984851

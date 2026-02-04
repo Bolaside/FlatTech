@@ -1,0 +1,16 @@
+filename = 'Zeta-1.0-30.jar'
+name = 'Zeta'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '1e87aae038570b8f5864bcdd6ae6dabb30162f2d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6432578
+project-id = 968868

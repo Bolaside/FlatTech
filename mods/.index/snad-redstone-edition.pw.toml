@@ -1,0 +1,16 @@
+filename = 'Snad-1.20.1-(Neo)Forge-3.0.1.jar'
+name = 'Snad: Redstone Edition'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '728d12dc57625a6d0ce129168d549a222c9618a4'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5827323
+project-id = 912282

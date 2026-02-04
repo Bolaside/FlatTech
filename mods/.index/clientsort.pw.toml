@@ -1,0 +1,16 @@
+filename = 'clientsort-forge-2.0.0-beta.19+1.20.1.jar'
+name = 'ClientSort'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = '1611359f6169d41c927479eb5ea0c1e3266e82fe'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6998565
+project-id = 1049891

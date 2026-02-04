@@ -1,0 +1,16 @@
+filename = 'Kiwi-1.20.1-Forge-11.9.2.jar'
+name = 'Kiwi Library'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '8e056749be2b26f520c9ca0a7130a7280bffc288'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6907020
+project-id = 303657

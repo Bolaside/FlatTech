@@ -1,0 +1,32 @@
+filename = 'e4mc_minecraft-forge-5.4.1.jar'
+name = 'e4mc'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [
+    '1.18',
+    '1.18.1',
+    '1.18.2',
+    '1.19',
+    '1.19.1',
+    '1.19.2',
+    '1.19.3',
+    '1.19.4',
+    '1.20',
+    '1.20.1',
+    '1.20.2',
+    '1.20.3',
+    '1.20.4',
+    '1.20.5',
+    '1.20.6'
+]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '6ebd3817a9d188a62a7c866794e64e073eef7209'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6710382
+project-id = 849519

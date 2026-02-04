@@ -1,0 +1,16 @@
+filename = 'AmbientSounds_FORGE_v6.1.11_mc1.20.1.jar'
+name = 'AmbientSounds 6'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'af412170c07febfb5c611b7237d806230dc83584'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6570130
+project-id = 254284
