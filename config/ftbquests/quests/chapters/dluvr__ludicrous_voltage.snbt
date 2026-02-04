@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "dluvr__ludicrous_voltage"
+	group: "1817B7E3E64035EE"
+	icon: "gtceu:luv_field_generator"
+	id: "2A00271E7C83A5C2"
+	order_index: 7
+	quest_links: [ ]
+	quests: [ ]
+	title: "&dLuV&r - Ludicrous Voltage"
+}

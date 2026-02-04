@@ -1,0 +1,659 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ulv__ultra_low_voltage"
+	group: "1817B7E3E64035EE"
+	icon: "kubejs:ulv_field_generator"
+	id: "67CA5C9919708511"
+	order_index: 1
+	quest_links: [{
+		disable_toast: true
+		id: "2BB2190EF1A20FB3"
+		linked_quest: "64661BF48F7EC492"
+		shape: "gear"
+		size: 2.0d
+		x: 0.0d
+		y: 0.0d
+	}]
+	quests: [
+		{
+			dependencies: [
+				"64661BF48F7EC492"
+				"7C3940F2CF4DDEE4"
+			]
+			description: [
+				"Make sure you batch craft all the things needed, it will be annoying to play early stages of the game if you don't."
+				""
+				"Once you have the solar panels, place one on top of a machine to power it with &c1 A &a@ &8ULV&r (8 EU/t)!"
+				""
+				"This is literally infinite (but low) power, since it's always midday. You could try to get far by using only these, since they become cheaper with time, but it will be very annoying to manage."
+			]
+			icon_scale: 0.9d
+			id: "776E24F8ED439579"
+			rewards: [{
+				count: 16
+				id: "2FFEAFA40B049250"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Your first power!"
+			tasks: [{
+				count: 2L
+				id: "2770CB7E6AA9B526"
+				item: { Count: 2, id: "gtceu:ulv_solar_panel" }
+				type: "item"
+			}]
+			title: "&8ULV&r Solar Panel"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4A224B1BDE6615E7"
+				"7C3940F2CF4DDEE4"
+			]
+			description: ["Now you can make certain dusts at cheaper ratios and unlock some new ones, such as &#c45649red brass &7(&eCu₆Sn₂Zn&7)&r."]
+			id: "450E2DD3A445FC10"
+			tasks: [{
+				id: "0A10C7DC3A31911F"
+				item: "gtceu:ulv_mixer"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4A224B1BDE6615E7"]
+			description: [
+				"Your first custom electric machine! This can:"
+				"&7-&r make planks to... wood planks... at a 1:1 ratio"
+				"&7-&r squeeze &#0000ffwater &7(&eH₂O&7)&r out of rubber leaves"
+			]
+			hide_dependency_lines: false
+			icon: "gtceu:ulv_squeezer"
+			id: "36BA5104ABAEBC72"
+			subtitle: "This wasn't in GregTech before..."
+			tasks: [
+				{
+					id: "1795687CBF6AA944"
+					item: "gtceu:ulv_squeezer"
+					type: "item"
+				}
+				{
+					id: "3A48AE402704878F"
+					item: "kubejs:sieve_squeezer_mold"
+					type: "item"
+				}
+				{
+					id: "5D3BC75271C9EB81"
+					item: "kubejs:plank_squeezer_mold"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["64661BF48F7EC492"]
+			description: [
+				"Another big crafting project! Hope you have a lot of &#e77c56copper &7(&eCu&7)&r ☺"
+				""
+				"Also a very generous reward!"
+			]
+			id: "4A224B1BDE6615E7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4B22A4466B960EF4"
+				table_id: 6934933918675639988L
+				type: "all_table"
+			}]
+			subtitle: "You will not escape batch crafting"
+			tasks: [
+				{
+					count: 16L
+					id: "2C857C6E175A1A47"
+					item: { Count: 16, id: "ulvcovm:ulv_electric_motor" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "18443442E6B803C4"
+					item: { Count: 8, id: "ulvcovm:ulv_electric_piston" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "2649533504AF7CA3"
+					item: { Count: 8, id: "ulvcovm:ulv_conveyor_module" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0F031C10A0437379"
+					item: { Count: 4, id: "ulvcovm:ulv_electric_pump" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0F19997BE84A2D45"
+					item: { Count: 4, id: "ulvcovm:ulv_robot_arm" }
+					type: "item"
+				}
+			]
+			title: "Basic &8ULV&r Components"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["450E2DD3A445FC10"]
+			description: [
+				"This is the &8ULV &dsuperconductor&r - &#c45649red brass &7(&eCu₆Sn₂Zn&7)&r (a.k.a. gunmetal, though there are no guns so I didn't call it that)."
+				""
+				"It's extremely simple, just put 6 parts &#e77c56copper &7(&eCu&7)&r, 2 parts &#fafefftin &7(&eSn&7)&r and 1 part &#ebebfazinc &7(&eZn&7)&r in a mixer to get 8 dust, then smelt the dust in a furnace. I hope you have a wiremill."
+			]
+			id: "2C1828F3139C9FDC"
+			shape: "rsquare"
+			subtitle: "&eCu₆Sn₂Zn &r(&8ULV &dSuperconductor&r) &r(R=V/I... wait, no, R=0!)"
+			tasks: [{
+				count: 16L
+				id: "490E003B313F8C62"
+				item: "flatcore:red_brass_ingot"
+				type: "item"
+			}]
+			title: "&#C45649Red Brass&r"
+			x: 5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"4A224B1BDE6615E7"
+				"7C3940F2CF4DDEE4"
+			]
+			description: [
+				"The most expensive machine so far, and not for no reason! It unlocks a LOT of new things to craft, as well as cheaper recipes for items you can already make, such as vacuum tubes."
+				""
+				"Keep in mind, though, you can't use most recipes since they're &7LV&r and not &8ULV&r, such as machine or multiblock casings."
+			]
+			id: "044D2B1F9FF4E6E3"
+			tasks: [{
+				id: "32FEED9ECA34C6E1"
+				item: "gtceu:ulv_assembler"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4A224B1BDE6615E7"
+				"7C3940F2CF4DDEE4"
+			]
+			description: ["Now you no longer need to turn ingots into dusts for most simple alloys, and unlock some new ones. But keep in mind that this alloy smelter doesn't have many recipes that the &7LV&r version does, just like all other &8ULV&r machines."]
+			id: "5D640B1F25A471D1"
+			tasks: [{
+				id: "045C6AE31738A2F2"
+				item: "gtceu:ulv_alloy_smelter"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4A224B1BDE6615E7"
+				"7C3940F2CF4DDEE4"
+			]
+			description: [
+				"Finally, the forge hammer! This makes you able to create gravel and sand without placing and breaking cobblestone, pretty neat."
+				""
+				"...don't craft this to make plates."
+			]
+			id: "48014F8018CEFD6F"
+			subtitle: "Bender's cousin"
+			tasks: [{
+				id: "391B76346AB1F159"
+				item: "gtceu:ulv_forge_hammer"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"4A224B1BDE6615E7"
+				"7C3940F2CF4DDEE4"
+			]
+			description: ["This will boost your ingot to wire ratios from 2:1 to 1:2, so I think it's a no-brainer that you should make this ASAP."]
+			id: "5047D574E0F06E55"
+			tasks: [{
+				id: "4B9286D09B3B161D"
+				item: "gtceu:ulv_wiremill"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"4A224B1BDE6615E7"
+				"7C3940F2CF4DDEE4"
+			]
+			description: ["Lets you turn some ingots into a plate, you'll unlock foil and other plate recipes at &7LV&r, and double plates at &bMV&r."]
+			hide_dependency_lines: false
+			hide_dependent_lines: true
+			id: "6AEB425BEFF26338"
+			tasks: [{
+				id: "421C562D533B93D4"
+				item: "gtceu:ulv_bender"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["36BA5104ABAEBC72"]
+			description: [
+				"Talking about water, do that now."
+				""
+				"Yes, you can just make an infinite source from 2 buckets. The squeezer recipe is not meant to be automated."
+			]
+			id: "3C9FE651D4945BBF"
+			subtitle: "&eH₂O"
+			tasks: [{
+				id: "582517E3CB29729B"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			title: "&#0000FFWater&r"
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["450E2DD3A445FC10"]
+			description: ["Normally, not a very useful alloy, but in this pack you make your first coils out of it."]
+			id: "7EA62DEECDFB22F2"
+			shape: "rsquare"
+			subtitle: "&eSnFe"
+			tasks: [{
+				count: 16L
+				id: "536A58F69B8CC5BE"
+				item: { Count: 16, id: "gtceu:tin_alloy_ingot" }
+				type: "item"
+			}]
+			title: "&#C8C8C8Tin Alloy&r"
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"044D2B1F9FF4E6E3"
+				"5047D574E0F06E55"
+				"5D640B1F25A471D1"
+				"7EA62DEECDFB22F2"
+				"31BC59A932A18F04"
+				"240FF7FA8A318BBA"
+			]
+			description: [
+				"Your first coil, all of their recipes follow the same formula: 8x double wire, 8 foil and 144 mB (one ingot) of a material make one coil block. 16 tin alloy coil blocks need 128 double &#c8c8c8tin alloy &7(&eSnFe&7)&r wire (128 ingots), 128 &#fafefftin &7(&eSn&7)&r foil (32 ingots), 2,304 mB liquid &#7e6f82lead &7(&ePb&7)&r (16 ingots)."
+				""
+				"I won't display this information for everything; you can figure this out using &dE&aM&bI&r."
+			]
+			icon_scale: 0.9d
+			id: "11E770ADE2A0F08B"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Don't use this for multi-smelters..."
+			tasks: [{
+				count: 16L
+				id: "04FAD9F05D758A00"
+				item: "kubejs:tin_alloy_coil_block"
+				type: "item"
+			}]
+			title: "&#C8C8C8Tin Alloy Coil Block"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["044D2B1F9FF4E6E3"]
+			description: [
+				"Maintenance is required for most multiblocks, including the one you will be making soon. To maintain multiblocks, open the maintenance hatch and click the empty slot to repair it, for that you need the tools in your inventory. Once you repair it, the machine will run for a very long time without requiring it (48 hours of working to be precise). If it does, though, it won't run again."
+				""
+				"To automatically repair it, you can put some tape into the hatch, and at &6HV&r you will be able to make a maintenance hatch that repairs itself without tape or tools!"
+			]
+			id: "146E06CD0571EC2A"
+			rewards: [{
+				count: 4
+				id: "1CC1C15C400EFC78"
+				item: "gtceu:duct_tape"
+				type: "item"
+			}]
+			subtitle: "I hope you made all the tools"
+			tasks: [{
+				id: "775CDC74DC2C9057"
+				item: "gtceu:maintenance_hatch"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["044D2B1F9FF4E6E3"]
+			description: ["Yes, pollution is here... it's only visual though ☺. Did I jumpscare you? "]
+			id: "05258D283C6D5988"
+			subtitle: "Pollution is real (read desc)"
+			tasks: [{
+				id: "26D51E87A72E30EF"
+				item: "gtceu:lv_muffler_hatch"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5D640B1F25A471D1"]
+			id: "009EDF27ED4EE908"
+			shape: "rsquare"
+			subtitle: "&eFe₂Ni"
+			tasks: [{
+				count: 16L
+				id: "6591846D9BEB5F11"
+				item: "gtceu:invar_ingot"
+				type: "item"
+			}]
+			title: "&#e2e8e1Invar"
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"044D2B1F9FF4E6E3"
+				"009EDF27ED4EE908"
+			]
+			description: ["Most casings stick to the same formula: 6 plates and a frame, which is 4 rods which is 2 (4 for you right now) ingots. "]
+			id: "3F897828A3FE0D1A"
+			tasks: [{
+				count: 8L
+				id: "4267F36748F65F77"
+				item: { Count: 8, id: "gtceu:heatproof_machine_casing" }
+				type: "item"
+			}]
+			title: "Heat Proof Invar Machine Casing"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3F897828A3FE0D1A"
+				"146E06CD0571EC2A"
+				"05258D283C6D5988"
+				"2337B69E58C48DA9"
+			]
+			description: [
+				"This is the Electric Blast Furnace, your first electric multiblock machine. Multiblock machines require you to form a specific structure in order to use them. You can see the structure by looking at the recipe or recipe usages of the controller of the multiblock."
+				""
+				"This quest is exactly everything you need to form your first EBF, to power it, you can put solars on &#c45649red brass &7(&eCu₆Sn₂Zn&7)&r wires and connect them to 2 &8ULV&r energy hatches, which you need in order to run &7LV&r recipe tier, for the next and arguably most important material for a while, &#a7a7a7steel &7(&eFe&7)&r."
+				""
+				"Note: Since &#a7a7a7steel &7(&eFe&7)&r is incredibly slow to make at first, and everything is renewable, you can actually make a couple EBFs instead of just one to have multiple &#a7a7a7steel &7(&eFe&7)&r ingots cooking at once."
+			]
+			icon: "gtceu:electric_blast_furnace"
+			icon_scale: 0.9d
+			id: "06C3AFE897952D75"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "First of... hundreds... :1000yardstare:"
+			tasks: [
+				{
+					id: "6213964124B182B8"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 11L
+					id: "4E2D010CB20DA034"
+					item: "gtceu:heatproof_machine_casing"
+					type: "item"
+				}
+				{
+					id: "6469E06E83E5F0B8"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "1E89CD53F1161DAF"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+				{
+					id: "397FF379F2A021DD"
+					item: "gtceu:ulv_input_bus"
+					type: "item"
+				}
+				{
+					id: "6B6C108212AE48D3"
+					item: "gtceu:ulv_output_bus"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "38CAB44E5A7FC075"
+					item: { Count: 2, id: "gtceu:ulv_energy_input_hatch" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"450E2DD3A445FC10"
+				"7A63A304EA071FC7"
+			]
+			description: ["Despite real life steel having <2% of carbon, this dust has 66%! But it's still the normal steel kind ☺"]
+			id: "66AD959F152AFBAC"
+			subtitle: "Wow that's gonna take a while"
+			tasks: [{
+				count: 8L
+				id: "45EEF0C5CC439B6D"
+				item: "gtceu:steel_dust"
+				type: "item"
+			}]
+			title: "&#a7a7a7Steel&r... Dust"
+			x: 6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"7C3940F2CF4DDEE4"
+				"4A224B1BDE6615E7"
+			]
+			description: ["This only has one recipe - &#333030carbon &7(&eC&7)&r. Hope you're enjoying the colors!"]
+			id: "4FB4095548114C9F"
+			tasks: [{
+				id: "1E3D9DA2AF1CD070"
+				item: "gtceu:ulv_electrolyzer"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4FB4095548114C9F"]
+			description: ["Get it by electrolyzing charcoal, the recipe was lowered to &8ULV&r."]
+			hide_dependency_lines: false
+			id: "7A63A304EA071FC7"
+			shape: "rsquare"
+			subtitle: "&eC &7(Very readable title™)"
+			tasks: [{
+				count: 8L
+				id: "0A6D70F59971C4C7"
+				item: { Count: 8, id: "gtceu:carbon_dust" }
+				type: "item"
+			}]
+			title: "&#333030Carbon"
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"06C3AFE897952D75"
+				"66AD959F152AFBAC"
+			]
+			description: ["You might think 16 is a lot due to how long it takes to produce, but it's like a grain of sand in a desert compared to how much you will need."]
+			id: "320C97EBCD204E06"
+			rewards: [{
+				count: 16
+				id: "4D3D206EDB33D053"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			subtitle: "&eFe &r(I didn't think of a funny subtitle for this one yet)"
+			tasks: [{
+				count: 16L
+				id: "6B47EDB1C878E243"
+				item: { Count: 16, id: "gtceu:steel_ingot" }
+				type: "item"
+			}]
+			title: "&#a7a7a7Steel&r"
+			x: 8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"320C97EBCD204E06"
+				"20C579CEC06209D7"
+			]
+			description: [
+				"Last time I'm mentioning that (most) tasks require batches to complete, I promise."
+				""
+				"Anyway, now that you have &#a7a7a7steel &7(&eFe&7)&r, you can make your first &7LV&r circuits! Those will require some more advanced components, but I'm sure you'll manage ☺"
+			]
+			icon_scale: 0.9d
+			id: "46492332DCFA1A7C"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "More batch crafting!"
+			tasks: [{
+				count: 16L
+				id: "1B6B83D9400523E9"
+				item: { Count: 16, id: "gtceu:basic_electronic_circuit" }
+				type: "item"
+			}]
+			title: "Basic Electronic Circuit"
+			x: 6.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"044D2B1F9FF4E6E3"
+				"5047D574E0F06E55"
+			]
+			description: ["Just like items and fluids, energy hatches is how you import energy into multiblock machines. These require voltage coils, which are not the same as coil blocks."]
+			id: "2337B69E58C48DA9"
+			subtitle: "Not items, not fluids, but energy"
+			tasks: [
+				{
+					count: 2L
+					id: "2C9D16855C83DA96"
+					item: { Count: 2, id: "gtceu:ulv_energy_input_hatch" }
+					type: "item"
+				}
+				{
+					id: "115637BE1A7C91B6"
+					item: "gtceu:ulv_voltage_coil"
+					type: "item"
+				}
+			]
+			title: "&8ULV Energy Hatch"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4A224B1BDE6615E7"
+				"7C3940F2CF4DDEE4"
+			]
+			id: "3FC51B5E43F7E2D7"
+			tasks: [{
+				id: "40B4940CCA668626"
+				item: "gtceu:ulv_chemical_bath"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"3FC51B5E43F7E2D7"
+				"3C9FE651D4945BBF"
+			]
+			description: ["Hope you still have your mortars to make the &#c29f6dwood&r dust."]
+			id: "20C579CEC06209D7"
+			tasks: [{
+				count: 32L
+				id: "30BA1E1E6292653A"
+				item: { Count: 32, id: "minecraft:paper" }
+				type: "item"
+			}]
+			title: "Paper"
+			x: 5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["320C97EBCD204E06"]
+			icon_scale: 0.9d
+			id: "3D3311DDC7D6C694"
+			rewards: [{
+				count: 8
+				id: "28DE9C6C4BF54D23"
+				item: "gtceu:steel_plate"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "This is where the real fun starts"
+			tasks: [{
+				id: "1220C475F0CB3815"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["320C97EBCD204E06"]
+			description: [
+				"Allows for more advanced automation!"
+				""
+				"Helps if you get an &7LV&r bender for the foil."
+			]
+			id: "32BCFBD9F0628128"
+			optional: true
+			tasks: [{
+				id: "16E69131380266AB"
+				item: "gtceu:item_filter"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4A224B1BDE6615E7"]
+			description: ["The &8ULV&r version is only required for liquid &#7e6f82lead &7(&ePb&7)&r, but you can start stockpiling &#804000creosote&r as well."]
+			id: "240FF7FA8A318BBA"
+			subtitle: "Dejuicer Device"
+			tasks: [{
+				id: "0842C0920B08CBC3"
+				item: "gtceu:ulv_extractor"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+	]
+	title: "&8ULV&r - Ultra Low Voltage"
+}

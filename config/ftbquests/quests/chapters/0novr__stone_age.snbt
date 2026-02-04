@@ -1,0 +1,838 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0novr__stone_age"
+	group: "1817B7E3E64035EE"
+	icon: "gtceu:stone_ingot"
+	id: "55B4833DCA02B3D7"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to &#7E7E7EF&#837A70l&#877662a&#8C7254t&#916E47T&#966A39e&#9A662Bc&#9F621Dh&r, a &bGregTech&r modpack on a superflat world!"
+				""
+				"Not sure what else to put here..."
+				"Oh yeah, thanks for playing!"
+			]
+			icon: "minecraft:grass_block"
+			icon_scale: 0.9d
+			id: "66968CD3AF9B8600"
+			rewards: [{
+				id: "25F487E056EDAF1B"
+				item: "minecraft:grass_block"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "real ones know why it's exactly that color"
+			tasks: [{
+				id: "5A26F1138EEFA161"
+				title: "Inception"
+				type: "checkmark"
+			}]
+			title: "&#6E99CAI&#0989CFn&#B480FFc&#FF00BFe&#FF5959p&#002060t&#592259i&#FDEA8Do&#DA8541n"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["66968CD3AF9B8600"]
+			description: [
+				"Time to start tearing the terrain apart! Break &agrass blocks&r &cwithout a tool&r for a chance to get a &arubber sapling&r."
+				""
+				"Then, press &8[Shift + RMB]&r to grow the tree &binstantly&r, no twerking :D!"
+				""
+				"You will get a &7[&fVanadium Steel Axe&7]&r as a &6reward&r, that should (hopefully ☺) last you until you can automate wood!"
+			]
+			id: "2EC9D92F15CDAD7D"
+			rewards: [{
+				id: "72072B9A2579D799"
+				item: {
+					Count: 1
+					id: "gtceu:vanadium_steel_axe"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							DisableShields: 1b
+							TreeFelling: 1b
+						}
+						GT.Tool: {
+							HarvestLevel: 3
+							MaxDamage: 1535
+							ToolSpeed: 5.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Your only wood type... for a while"
+			tasks: [{
+				id: "2253661E11239FC3"
+				item: "gtceu:rubber_sapling"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["66968CD3AF9B8600"]
+			description: ["Break &#966C4Adirt blocks&r &cwithout a tool&r to obtain &7cobble&r, then combine 4 to get your first &7cobblestone&r!"]
+			id: "45725FB652CCA974"
+			subtitle: "4(Cobble)=Cobblestone"
+			tasks: [{
+				id: "306D2310C29EB353"
+				item: "kubejs:cobble"
+				type: "item"
+			}]
+			title: "Cobble&mstone&r"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2EC9D92F15CDAD7D"]
+			description: ["Hopefully, I don't need to explain that you can look up the crafting recipe in &dE&aM&bI&r. But yeah, you will get a &l1:1&r crafting recipe later in &8ULV&r... for whatever you'll need wood planks at that point for..."]
+			id: "6FAE355AB843EA93"
+			rewards: [{
+				count: 8
+				id: "150A2C201BFE7798"
+				item: "gtceu:wood_plate"
+				type: "item"
+			}]
+			subtitle: "A bit expensive for now"
+			tasks: [{
+				id: "40D5ACD29DCDA58F"
+				item: "gtceu:wood_plate"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5D63E307C0A27EDE"
+				"45725FB652CCA974"
+			]
+			description: ["Combine some cobblestone, slabs of that, sticky resin and with the help of some &bGregTech&r tools, you will obtain your first (of many) &7furnace&r, a stone age \"machine\"! You definitely want to make multiple of these, since they are &cpretty slow&r for all the smelting you will need to do."]
+			icon_scale: 0.9d
+			id: "1CDF32FF626D1E82"
+			rewards: [{
+				count: 16
+				id: "7958EFF3C762C5F5"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Stone age \"machinery\""
+			tasks: [{
+				id: "0601654CA4103C60"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6FAE355AB843EA93"]
+			description: [
+				"With the wood planks you made before, you can now make your first &bGregTech&r tools! Those will assist you in many crafting recipes and some (like the wrench) also have in-world interactions."
+				""
+				"This quest calls for one of every wooden &bGregTech&r tool."
+			]
+			id: "5D63E307C0A27EDE"
+			rewards: [{
+				count: 16
+				id: "466AA313B1B647EB"
+				item: "gtceu:wood_plate"
+				type: "item"
+			}]
+			subtitle: "Bet you've never seen THAT before"
+			tasks: [
+				{
+					id: "2F76B8859A949557"
+					item: {
+						Count: 1
+						id: "gtceu:wood_wrench"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								Mode: 2b
+							}
+							GT.Tool: {
+								HarvestLevel: 1
+								MaxDamage: 127
+								ToolSpeed: 5.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "49C11D1C72B8ABE4"
+					item: {
+						Count: 1
+						id: "gtceu:wood_file"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								MaxDamage: 127
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "77C2236CDB5ED56A"
+					item: {
+						Count: 1
+						id: "gtceu:wood_saw"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								HarvestIce: 1b
+							}
+							GT.Tool: {
+								MaxDamage: 127
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "783327BA54BA57E2"
+					item: {
+						Count: 1
+						id: "gtceu:wood_mallet"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								MaxDamage: 127
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Wooden Tools"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1CDF32FF626D1E82"]
+			description: ["I'm sure you know how to make &7stone&r... right? In case not, smelt &7cobblestone&r in a &7furnace&r. Prepare to make a lot of &7stone&r, because it's the main material for, well, the &8stone age.&r"]
+			id: "6A5E6DA693DFCBA6"
+			shape: "rsquare"
+			subtitle: "&e? &7(You will need A LOT of this)"
+			tasks: [{
+				id: "36A4F8951D29E263"
+				item: "minecraft:stone"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5D63E307C0A27EDE"
+				"6A5E6DA693DFCBA6"
+			]
+			description: ["Yes, stone &oingots&r. Using a &bfile&r, you can carve some &7stone&r into &7stone ingots&r."]
+			id: "41BF3E722E3698D0"
+			shape: "rsquare"
+			subtitle: "Hold up, wait a minute, something ain't right"
+			tasks: [{
+				count: 8L
+				id: "67DE7F46239234CD"
+				item: "gtceu:stone_ingot"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["41BF3E722E3698D0"]
+			description: [
+				"While you don't &ohave to&r upgrade all of the &#917047wooden&r tools to &7stone&r right now, it's best you do so, since they have a lot more &adurability&r. Other than that, you can now make a &bhammer&r a very important tool which lets you make &aplates&r at a very bad 2:1 ratio. "
+				""
+				"After you made a &bhammer&r, a &7stone&r version of the &dfile&r is now obtainable too, which is required for the next machine."
+			]
+			id: "0BD3514D91E0FD41"
+			subtitle: "Upgrades already?"
+			tasks: [
+				{
+					id: "334A43BFE2E68125"
+					item: {
+						Count: 1
+						id: "gtceu:stone_hammer"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								HarvestLevel: 1
+								MaxDamage: 191
+								ToolSpeed: 5.5f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "71E000AA789814CD"
+					item: {
+						Count: 1
+						id: "gtceu:stone_file"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								MaxDamage: 191
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Stone Tools"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"41BF3E722E3698D0"
+				"0BD3514D91E0FD41"
+			]
+			description: [
+				"This is one hell of a crafting project for such age. Once you craft that behemoth of a recipe, dig down to bedrock and start mining it. You will never actually succeed, but what comes from trying to mine bedrock is very useful:"
+				"&7- Cobble&r. Lots of it. No more destroying the terrain!"
+				"&7-&r &#887258Ferrous Mineral&r"
+				"&7-&r &#c47a42Cupriferrous Aggregate"
+				"&7-&r &#60526bGalena-Spha&#675f4blerite Blend"
+				"&7-&r &#5c4f45Hematite-Re&#6a4944dstone Mix"
+				"&7-&r &#58514fCassiterite Impurities"
+				""
+				"Now, these minerals by themselves are not useful, but the things you can extract from them very much are. You will learn what they are in the next quest."
+			]
+			icon_scale: 0.9d
+			id: "14F4E20FBAB2ABF1"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Your biggest technological advancement so far"
+			tasks: [{
+				id: "43D75E69BB985D10"
+				item: "kubejs:bedrock_ore_extractor"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0BD3514D91E0FD41"]
+			description: [
+				"This is your first real &dGregTech&r machine. It requires &ano power&r because... I am yet to make up a reason for that actually. Anyways, to know what to expect to get from every mineral, you can go in &dE&aM&bI&r and right click the &7[&fOre Separator&7]&r to see all the recipes that it does."
+				""
+				"I will give you some item pipes so you can pipe multiple ore separators into one container ☺"
+			]
+			id: "455DC30B0BEC7B01"
+			rewards: [{
+				count: 16
+				id: "6342D96D26C0D7E9"
+				item: "gtceu:brass_normal_item_pipe"
+				type: "item"
+			}]
+			subtitle: "First actual machine!"
+			tasks: [{
+				id: "577AFF381444C55F"
+				item: "gtceu:ulv_ore_separator"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"14F4E20FBAB2ABF1"
+				"455DC30B0BEC7B01"
+			]
+			description: [
+				"After smelting the big amounts of ore that you get from separated bedrock minerals, you have access to most basic (and not so much) materials used in your everyday recipes."
+				""
+				"As a reward for getting all those ingots, you will get some top-notch &bmortars&r, durability of which totals to 1,024 recipes! You will need to make a lot of dusts, so those might not even last you until a macerator at &7LV&r."
+			]
+			id: "579978926349D6CA"
+			rewards: [{
+				count: 2
+				id: "197C2E3720D41C3D"
+				item: {
+					Count: 1
+					id: "gtceu:cobalt_brass_mortar"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							MaxDamage: 1023
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			subtitle: "Cool title, right? Please say yes"
+			tasks: [
+				{
+					count: 32L
+					id: "36F53AB3355C8D9E"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "00C385CC396970C6"
+					item: { Count: 32, id: "minecraft:copper_ingot" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "1B4C52B60890FEC0"
+					item: { Count: 32, id: "gtceu:tin_ingot" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "45E66390FD8C2A5D"
+					item: { Count: 32, id: "gtceu:lead_ingot" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "1A7459604A0A4C56"
+					item: { Count: 64, id: "minecraft:redstone" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "724A9F1197ABFCCD"
+					item: { Count: 16, id: "gtceu:zinc_ingot" }
+					type: "item"
+				}
+			]
+			title: "&#ec8c8cM&#ffc58ba&#ffe295t&#ffff9ee&#9aff9ar&#97cff5i&#9db5faa&#a39affl&#eea0ffs"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"2EC9D92F15CDAD7D"
+				"0235BC4EDB2FBC66"
+			]
+			description: ["Make ingots by combining &msmelted&r &6sticky resin&r with an brick wooden form and smash 2 of those into one plate!"]
+			id: "308B145242415576"
+			rewards: [{
+				count: 8
+				id: "1776CCE2A59037F7"
+				item: "gtceu:rubber_plate"
+				random_bonus: 8
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "&eC₅H₈&7 (First insulator)"
+			tasks: [
+				{
+					id: "6313665532135B52"
+					item: "gtceu:rubber_ingot"
+					type: "item"
+				}
+				{
+					id: "6D3603D7D9BABD12"
+					item: "gtceu:rubber_plate"
+					type: "item"
+				}
+			]
+			title: "Rubber"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"308B145242415576"
+				"0A2AF8067AC16948"
+				"6A1AE81B131B4CF7"
+			]
+			id: "193EBF1CB6746260"
+			rewards: [{
+				id: "3167B172821060F5"
+				item: {
+					Count: 1
+					id: "gtceu:cobalt_brass_wire_cutter"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							HarvestLevel: 2
+							MaxDamage: 1023
+							ToolSpeed: 6.5f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7F0AC67F2E6EB150"
+					item: "gtceu:lead_single_cable"
+					type: "item"
+				}
+				{
+					id: "62C99A92E02252A7"
+					item: "gtceu:red_alloy_single_cable"
+					type: "item"
+				}
+			]
+			title: "Cables for Days"
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["579978926349D6CA"]
+			description: [
+				"Ok, I'm not as excited about this as the GT:NH guide book, but it is a quite important alloy for ULV."
+				""
+				"Oh, and guess what? You have to use a more expensive recipe until an alloy smelter is available!"
+				""
+				"I won't stop forcing you to batch craft btw ☺"
+			]
+			id: "0A2AF8067AC16948"
+			shape: "rsquare"
+			subtitle: "&eCu(Si(FeS₂)₅(CrAl₂O₃)Hg₃)₄ &7(\"overhyped and overrated by the guide book\" - AverageGregTechPlayer)"
+			tasks: [{
+				count: 16L
+				id: "6EF643FB0F23AE39"
+				item: "gtceu:red_alloy_ingot"
+				type: "item"
+			}]
+			title: "&#c55252Red Alloy"
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2EC9D92F15CDAD7D"]
+			id: "0235BC4EDB2FBC66"
+			subtitle: "Coke bricks? No! Rubber"
+			tasks: [{
+				id: "7397EF9783FEBAD3"
+				item: "gtceu:brick_wooden_form"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["579978926349D6CA"]
+			description: [
+				"Three tool upgrades in one chapter... crazy! Anyway, you should probably use &#827b78wrought iron&r for those, since it has 50% more durability, and you get it by just smelting &#eeeeeeiron&r ingots."
+				""
+				"A crowbar is not required to complete this quest, but in case you're wondering how to get it - compost rubber saplings and make bone meal into white dye."
+			]
+			icon_scale: 0.9d
+			id: "6A1AE81B131B4CF7"
+			rewards: [{
+				id: "5B14F3BB34D33135"
+				item: {
+					Count: 1
+					id: "minecraft:paper"
+					tag: {
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"text\":\"i made all the tools and all i got was this lousy paper\"}],\"text\":\"\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "The pre-final upgrade"
+			tasks: [
+				{
+					id: "08D417D92CC9A98E"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Iron Wrench\"}"
+							}
+							"ftbfiltersystem:filter": "or(item(gtceu:iron_wrench)item(gtceu:wrought_iron_wrench))"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "615A258251ADBD24"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Iron Screwdriver\"}"
+							}
+							"ftbfiltersystem:filter": "or(item(gtceu:iron_screwdriver)item(gtceu:wrought_iron_screwdriver))"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "341C9259555E40FF"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Iron Wire Cutter\"}"
+							}
+							"ftbfiltersystem:filter": "or(item(gtceu:iron_wire_cutter)item(gtceu:wrought_iron_wire_cutter))"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "588E6E3AA2E70E36"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Iron File\"}"
+							}
+							"ftbfiltersystem:filter": "or(item(gtceu:iron_file)item(gtceu:wrought_iron_file))"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2B125680C5259D10"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Iron Hammer\"}"
+							}
+							"ftbfiltersystem:filter": "or(item(gtceu:iron_hammer)item(gtceu:wrought_iron_hammer))"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6DD91440C5D1A87D"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Iron Mortar\"}"
+							}
+							"ftbfiltersystem:filter": "or(item(gtceu:iron_mortar)item(gtceu:wrought_iron_mortar))"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6932E142E0C822B2"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Iron Saw\"}"
+							}
+							"ftbfiltersystem:filter": "or(item(gtceu:iron_saw)item(gtceu:wrought_iron_saw))"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "29FC8CF803E1A5C2"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Iron Crowbar\"}"
+							}
+							"ftbfiltersystem:filter": "or(item(gtceu:iron_crowbar)item(gtceu:wrought_iron_crowbar))"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "08908EF4A68AA393"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Any Available Knife\"}"
+							}
+							"ftbfiltersystem:filter": "or(item(gtceu:flint_knife)item(gtceu:iron_knife)item(gtceu:wrought_iron_knife))"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Iron Tools"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1CEBF4F66F7BF65A"
+				"7972521BEDD89D8C"
+			]
+			icon_scale: 0.9d
+			id: "7C3940F2CF4DDEE4"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "First circuits!!!"
+			tasks: [{
+				count: 8L
+				id: "0A590F67779A2801"
+				item: { Count: 8, id: "gtceu:vacuum_tube" }
+				type: "item"
+			}]
+			title: "Vacuum Tube"
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["579978926349D6CA"]
+			description: ["If you made tools from iron instead... sucks to suck, you gotta make wrought iron either way ☺"]
+			id: "7972521BEDD89D8C"
+			shape: "rsquare"
+			subtitle: "&eFe &7(Forgot another material)"
+			tasks: [{
+				count: 16L
+				id: "66BDE41B820000A2"
+				item: { Count: 16, id: "gtceu:wrought_iron_ingot" }
+				type: "item"
+			}]
+			title: "&#827b78Wrought Iron&r"
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"45725FB652CCA974"
+				"0BD3514D91E0FD41"
+			]
+			description: ["Mine cobblestone with a hammer to get gravel, then mine gravel with a hammer to get sand."]
+			id: "1C41E04BB0377343"
+			tasks: [
+				{
+					count: 8L
+					id: "1518E580929987A2"
+					item: { Count: 8, id: "minecraft:gravel" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "7DB50A0686B858DC"
+					item: { Count: 8, id: "minecraft:sand" }
+					type: "item"
+				}
+			]
+			title: "Primitive Stoneworks"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1C41E04BB0377343"]
+			description: ["Glass recipe is unchanged, so just smelt sand to get glass blocks ☺"]
+			hide_dependent_lines: true
+			id: "1CEBF4F66F7BF65A"
+			shape: "rsquare"
+			subtitle: "&e(SiO₂)"
+			tasks: [{
+				count: 8L
+				id: "2178CD5C5A7E1A38"
+				item: { Count: 8, id: "minecraft:glass" }
+				type: "item"
+			}]
+			title: "&#ffffffGlass"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"193EBF1CB6746260"
+				"6FAE355AB843EA93"
+			]
+			icon_scale: 0.9d
+			id: "64661BF48F7EC492"
+			rewards: [{
+				count: 8
+				id: "632AA3A5C05269F6"
+				item: "gtceu:wrought_iron_plate"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Welcome... to voltage"
+			tasks: [{
+				id: "686E0F46E5EC26CB"
+				item: "gtceu:ulv_machine_hull"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["579978926349D6CA"]
+			description: [
+				"To get &#fdf55fgold &7(&eAu&7)&r, process &#9d9d9dmagnetite &7(&eFe₃O₄&7)&r or &#e77c56copper &7(&eCu&7)&r."
+				"To get &#5050facobalt &7(&eCo&7)&r, process &#e77c56copper &7(&eCu&7)&r."
+				""
+				"Overall, just check the \"Ore Processing Line\" tab to see what dust byproducts you can get through processing various ores in different machines."
+				""
+				"You will get the ore processing machines at &7LV&r, and macerator byproducts at &6HV&r."
+			]
+			id: "6EA72FD5C0DBFADD"
+			rewards: [{
+				count: 16
+				id: "2AA8C131953E2B36"
+				item: "gtceu:raw_magnetite"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4E68130A33DD0B60"
+				title: "You forgot some materials!"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+	]
+	title: "&#444444NoV&r - Stone Age"
+}

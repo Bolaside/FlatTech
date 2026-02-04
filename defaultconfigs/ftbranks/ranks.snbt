@@ -1,0 +1,13 @@
+{
+	member: {
+		name: "Member"
+		power: 1
+		condition: "always_active"
+	}
+	op: {
+		name: "OP"
+		power: 1000
+		condition: "op"
+		ftbranks.name_format: "&l{name}"
+	}
+}

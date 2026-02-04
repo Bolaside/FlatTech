@@ -1,0 +1,53 @@
+/*
+
+# ?
+!.gitignore
+
+!index.toml
+!pack.toml
+
+# kubejs
+!/kubejs/
+!/kubejs/probe/user
+/kubejs/config/probe*.json
+/kubejs/probe
+/kubejs/*/jsconfig.json
+
+# mods
+!/mods/
+!/mods/.index/
+/mods/*.jar
+!/mods/flatcore*
+
+# those are server configs.. i think
+!/defaultconfigs/
+/defaultconfigs/*
+!/defaultconfigs/ftbranks/
+
+# configs
+!/config/
+/config/*
+
+!/config/ae2/
+!/config/almostunified/
+!/config/defaultworldtype/
+/config/defaultworldtype/world-presets.txt
+!/config/ftbquests/
+!/config/functionalstorage/
+!/config/clientsort*.json
+!/config/craftingtweaks-common.toml
+!/config/crazyae2addons-common.toml
+!/config/darkmodeeverywhere-client.toml
+!/config/difficultylock.json5
+# why is this shit even a css file bro 🤦
+!/config/emi.css
+!/config/expatternprovider-common.toml
+!/config/fluxnetworks-common.toml
+!/config/freecam.toml
+!/config/gt*.yaml
+!/config/itemzoom-client.toml
+!/config/mae2-common.toml
+!/config/notes-client.toml
+!/config/quark-common.toml
+!/config/xaero*.txt
+!/config/zeta-common.toml

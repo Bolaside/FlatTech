@@ -1,0 +1,202 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "alloys"
+	group: "4BCBFE0C007F8B0A"
+	icon: "gtceu:soldering_alloy_ingot"
+	id: "250DA67AD32A626E"
+	images: [{
+		height: 1.5d
+		hover: [
+			"This is a test chapter I'll organize it later™"
+			"asdfghbjnkml,swedrft"
+		]
+		image: "minecraft:block/dropper_front"
+		rotation: 0.0d
+		width: 1.5d
+		x: -1.5d
+		y: -0.5d
+	}]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Used in many early circuits. A ULV superconductor when coated with rubber."]
+			id: "2DED842B9FBC2532"
+			subtitle: "That's a lot of redstone"
+			tasks: [{
+				count: 16L
+				id: "612318CB39046871"
+				item: { Count: 16, id: "gtceu:red_alloy_ingot" }
+				type: "item"
+			}]
+			title: "&#c55252Red Alloy"
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			id: "1608FC1E5423B13D"
+			subtitle: "There is no steam age!"
+			tasks: [{
+				count: 16L
+				id: "7DBEBB2A76478DCC"
+				item: { Count: 16, id: "gtceu:bronze_ingot" }
+				type: "item"
+			}]
+			title: "&#ffc370Bronze"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			id: "22CAE5C2A8AA257A"
+			tasks: [{
+				count: 16L
+				id: "20D6773696063044"
+				item: { Count: 16, id: "gtceu:battery_alloy_ingot" }
+				type: "item"
+			}]
+			title: "&#cac0ffBattery Alloy"
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			id: "2747E878AD86B881"
+			tasks: [{
+				count: 16L
+				id: "6E79EDAD69560070"
+				item: { Count: 16, id: "gtceu:brass_ingot" }
+				type: "item"
+			}]
+			title: "&#ffe36eBrass"
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			id: "75BD852B7A9EC8D1"
+			tasks: [{
+				count: 16L
+				id: "1BDD4B25D47BDD1D"
+				item: { Count: 16, id: "gtceu:electrum_ingot" }
+				type: "item"
+			}]
+			title: "&#ffff8bElectrum"
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			id: "65DB41E49F616210"
+			tasks: [{
+				count: 16L
+				id: "0CB1959C8F4289EA"
+				item: { Count: 16, id: "gtceu:invar_ingot" }
+				type: "item"
+			}]
+			title: "&#e2e8e1Invar"
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			id: "1728549273AF624D"
+			subtitle: "Nothing particularly useful..."
+			tasks: [{
+				count: 16L
+				id: "639C16F360CA3CED"
+				item: { Count: 16, id: "gtceu:magnalium_ingot" }
+				type: "item"
+			}]
+			title: "&#98b9e9Magnalium"
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			id: "74FCB05DDBB83B03"
+			subtitle: "Even more forgotten"
+			tasks: [{
+				count: 16L
+				id: "568FF4B031ADE074"
+				item: { Count: 16, id: "gtceu:niobium_nitride_ingot" }
+				type: "item"
+			}]
+			title: "&#574457Niobium Nitride"
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			id: "639C06C89D2279F4"
+			tasks: [{
+				count: 16L
+				id: "7928E1DBA885318C"
+				item: { Count: 16, id: "gtceu:niobium_titanium_ingot" }
+				type: "item"
+			}]
+			title: "&#d2d9f9Niobium Titanium"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			id: "34FF54F7F4343AA6"
+			subtitle: "Idk... this silver is pretty Sterling"
+			tasks: [{
+				count: 16L
+				id: "342D08DF869B3789"
+				item: { Count: 16, id: "gtceu:sterling_silver_ingot" }
+				type: "item"
+			}]
+			title: "&#faf4dcSterling Silver"
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			id: "040185B0C0FA7B6D"
+			subtitle: "Fastest MV tool material"
+			tasks: [{
+				count: 16L
+				id: "1479F6DD9BB1B4B4"
+				item: { Count: 16, id: "gtceu:rose_gold_ingot" }
+				type: "item"
+			}]
+			title: "&#ecd5b8Rose Gold"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			id: "4797ADFD201DC2B7"
+			subtitle: "Brown Bronze"
+			tasks: [{
+				count: 16L
+				id: "6FCD53996C1E7ACD"
+				item: { Count: 16, id: "gtceu:black_bronze_ingot" }
+				type: "item"
+			}]
+			title: "&#8b7c70Black Bronze"
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			id: "20B0241FEC6CCBE0"
+			tasks: [{
+				count: 16L
+				id: "5133E2CE6E674951"
+				item: "gtceu:bismuth_bronze_ingot"
+				type: "item"
+			}]
+			title: "&#ffd26fBismuth Bronze"
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			id: "43774A9614C64D43"
+			size: 5.0d
+			subtitle: "slight inconvenience"
+			tasks: [{
+				count: 65536L
+				id: "0AA2E632BA58EFFC"
+				item: { Count: 65536, id: "gtceu:naquadah_alloy_ingot" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.5d
+		}
+	]
+	title: "Alloys"
+}

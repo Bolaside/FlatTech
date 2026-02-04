@@ -1,0 +1,13 @@
+{
+	id: "603DD5A7FB781EB4"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ count: 8, item: "ulvcovm:ulv_electric_motor" }
+		{ count: 4, item: "ulvcovm:ulv_electric_piston" }
+		{ count: 4, item: "ulvcovm:ulv_conveyor_module" }
+		{ count: 2, item: "ulvcovm:ulv_electric_pump" }
+		{ count: 2, item: "ulvcovm:ulv_robot_arm" }
+	]
+	title: "Basic ULV Components"
+}

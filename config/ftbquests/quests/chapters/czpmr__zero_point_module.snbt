@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "czpmr__zero_point_module"
+	group: "1817B7E3E64035EE"
+	icon: "gtceu:zpm_field_generator"
+	id: "4A1405CD858F3C50"
+	order_index: 8
+	quest_links: [ ]
+	quests: [ ]
+	title: "&cZPM&r - Zero Point Module"
+}

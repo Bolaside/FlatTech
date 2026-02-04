@@ -1,0 +1,19 @@
+{
+  "gtceu.squeezer": "Squeezing",
+  "gtceu.ore_separator": "Ore Separating",
+  "gtceu.stone_oreifier": "Stone Oreifier",
+  "gtceu.greenhouse": "Greenhouse",
+  "gtceu.water_pump": "Water Pump",
+
+  "material.gtceu.redstone_glowstone_mixture": "Redstone-Glowstone Mixture",
+  "material.gtceu.red_brass": "Red Brass",
+  "material.gtceu.stone_ore_mass": "Stone Ore Mass",
+  "material.gtceu.azuron": "Azuron",
+  "material.gtceu.charged_certus_quartz": "Charged Certus Quartz",
+  "material.gtceu.fluix": "Fluix",
+
+  "block.gtceu.lv_muffler_hatch": "Muffler Hatch",
+  "block.gtceu.stone_oreifier": "Stone Oreifier",
+  "block.gtceu.greenhouse": "Greenhouse",
+  "block.gtceu.water_pump": "Water Pump"
+}

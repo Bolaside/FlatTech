@@ -1,0 +1,1062 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7lvr__low_voltage"
+	group: "1817B7E3E64035EE"
+	icon: "gtceu:lv_field_generator"
+	id: "405F71850A439811"
+	order_index: 2
+	quest_links: [{
+		id: "7C40B086F5746020"
+		linked_quest: "3D3311DDC7D6C694"
+		shape: "gear"
+		size: 2.0d
+		x: 0.0d
+		y: 0.5d
+	}]
+	quests: [
+		{
+			dependencies: ["3D3311DDC7D6C694"]
+			description: ["You need a lot of &#a7a7a7steel &7(&eFe&7)&r."]
+			id: "6BB2D05CED5983F1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6B4DB0BF1AAAAAE6"
+				table_id: 5863850045635649010L
+				type: "all_table"
+			}]
+			tasks: [
+				{
+					count: 16L
+					id: "1737AB9CDA505443"
+					item: "gtceu:lv_electric_motor"
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "77240BA2873B2C66"
+					item: "gtceu:lv_electric_piston"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "796B0257457F4DD4"
+					item: "gtceu:lv_conveyor_module"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4339BA135F9277ED"
+					item: "gtceu:lv_electric_pump"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6E3F5D0C3FA2AEE7"
+					item: "gtceu:lv_robot_arm"
+					type: "item"
+				}
+			]
+			title: "Basic &7LV&r Components"
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6BB2D05CED5983F1"]
+			description: [
+				"I will not be adding &omost&r machines that you are already familiar with, I think it's pointless. You &oshould&r upgrade machines that you have if you can. You should also be able to figure out what machines do you need to obtain an item, such as &asugar cane&r; you have &dE&aM&bI&r."
+				""
+				"Have some free parts 'cause I'm nice ☺"
+			]
+			icon_scale: 0.9d
+			id: "4B36292E70304D5D"
+			rewards: [
+				{
+					count: 4
+					id: "0FBCB026C9FA618F"
+					item: "gtceu:basic_electronic_circuit"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5020C79D71A85539"
+					table_id: 5863850045635649010L
+					type: "choice"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "65F02E3598B5F7B7"
+				title: "Note about quests"
+				type: "checkmark"
+			}]
+			title: "Note on machine quests"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"3D3311DDC7D6C694"
+				"7F7C93EC6FE5A4F5"
+			]
+			description: ["Those components are way less used, and require some fancy materials. You won't be able to make all of these for a while, but you won't need to either."]
+			hide_dependent_lines: true
+			id: "3E5DA0A0759AB093"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "614828AB437004D9"
+				table_id: 3578342175066872555L
+				type: "all_table"
+			}]
+			subtitle: "What kind of strange tech is this?"
+			tasks: [
+				{
+					count: 2L
+					id: "0B571C9887518EC4"
+					item: { Count: 2, id: "gtceu:lv_emitter" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "5E51D3879C805EF4"
+					item: { Count: 2, id: "gtceu:lv_sensor" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6BC279C5DCA2D831"
+					item: "gtceu:lv_field_generator"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Advanced &7LV&r Components"
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["30D2AD01C46F3AB8"]
+			description: ["You can finally throw away your mortars!"]
+			id: "4B559F3859073C3C"
+			subtitle: "Why do machine names have a space at the end"
+			tasks: [{
+				id: "226D531226EB6BDF"
+				item: "gtceu:lv_macerator"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4B36292E70304D5D"]
+			description: ["Can make plates from certain gem dusts, ingots from nuggets, blocks from ingots, and turn &6sticky resin&r straight into rubber sheets at a 1:1 ratio!"]
+			id: "182B54614015C0BE"
+			tasks: [{
+				id: "7C64F030CFD13FD9"
+				item: "gtceu:lv_compressor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["10AE2B7A6C717C6E"]
+			description: [
+				"No, you won't transform all ores using this guy. Instead, you will make... (tempered) glass... and &#f2c079annealed copper &7(&eCu&7)&r... great."
+				""
+				"&eWarning! &rEvery single arc furnace recipe requires &#4cc3ffoxygen &7(&eO&7)&r, 1 mB per tick, so a 1 sec. long recipe will require 20 mB."
+			]
+			id: "3705E61602C0675E"
+			subtitle: "*Sky of Grind flashbacks*"
+			tasks: [{
+				id: "63570F7E05F17627"
+				item: "gtceu:lv_arc_furnace"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["3705E61602C0675E"]
+			description: [
+				"Basically &#e77c56copper &7(&eCu&7)&r but better where it can be used:"
+				"- Vacuum Tubes"
+				"- Resistors"
+				"- Diodes"
+				"- Inductors"
+				"- Power transfer (please don't)"
+			]
+			id: "4CF770110C052543"
+			shape: "rsquare"
+			subtitle: "&eCu"
+			tasks: [{
+				count: 16L
+				id: "7542DDB35D96B852"
+				item: "gtceu:annealed_copper_ingot"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&#f2c079Annealed Copper"
+			x: -1.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["182B54614015C0BE"]
+			description: ["36 logs per &#c8ffffdiamond &7(&eC&7)&r, you will get access to producing the ore itself soon."]
+			id: "30D2AD01C46F3AB8"
+			rewards: [{
+				count: 32
+				id: "550CEB2B0B514521"
+				item: "gtceu:rubber_log"
+				random_bonus: 32
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "&eC"
+			tasks: [{
+				count: 4L
+				id: "4140DF28D0130283"
+				item: { Count: 4, id: "minecraft:diamond" }
+				type: "item"
+			}]
+			title: "&#c8ffffDiamond"
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["42F2B449DE91CA29"]
+			description: ["It's best to not process these ores through macerators right now and just smelt them instead."]
+			id: "7F7C93EC6FE5A4F5"
+			rewards: [{
+				count: 16
+				id: "202954813AE0790D"
+				item: "gtceu:silicon_dioxide_dust"
+				random_bonus: 16
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "Remember about overclocking?"
+			tasks: [
+				{
+					count: 16L
+					id: "7EEF89998878701E"
+					item: { Count: 16, id: "minecraft:quartz" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "694407685D4774B2"
+					item: { Count: 16, id: "gtceu:quartzite_gem" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "70DAEBE8FCF5D963"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+			]
+			title: "&#f8efe3Premium &#f2f5edSilica &#c2d6ffSand"
+			x: 3.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["4B36292E70304D5D"]
+			id: "644AFC98DF655270"
+			subtitle: "The tooltip says pretty much everything"
+			tasks: [{
+				id: "4FFBE42A2CF75429"
+				item: "gtceu:lv_distillery"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"30D2AD01C46F3AB8"
+				"0BD4C163B5B9A73F"
+			]
+			description: [
+				"The Stone Oreifier turns stone and &#8f8f8fstone ore mass &7(&e?₄Ca(H₂O)&7)&r into various ores, depending on the circuit of the machine. The structure should be pretty simple to follow. I hope you have a lot &#a7a7a7steel &7(&eFe&7)&r by now!"
+				""
+				"&9Info! &rRecipe times depend on the total mass of the possible ores."
+			]
+			icon_scale: 0.9d
+			id: "42F2B449DE91CA29"
+			rewards: [{
+				id: "74E532F16A7FC4A9"
+				item: {
+					Count: 1
+					id: "gtceu:steel_fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 8000
+							FluidName: "gtceu:stone_ore_mass"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Finally, more resources!"
+			tasks: [{
+				id: "7D277CF6BF6E46A6"
+				item: "flatcore:stone_oreifier"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4B36292E70304D5D"]
+			description: ["One of the most important machines in &bGregTech&r. You should passive those whenever it's possible/viable."]
+			icon_scale: 0.9d
+			id: "018A0F8CC27826FF"
+			rewards: [{
+				count: 16
+				id: "6510D960731CC1AA"
+				item: "gtceu:universal_fluid_cell"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "The most crafted machine you will have, sooner or later"
+			tasks: [{
+				id: "08EAFC6AB8C6C55F"
+				item: "gtceu:lv_chemical_reactor"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["018A0F8CC27826FF"]
+			description: [
+				"Your first chemistry line! They grow so fast..."
+				""
+				"I sure hope you can leverage your incredible &dE&aM&bI&r skills to map out the processing line yourself and how to automate all the items!"
+				""
+				"But if you don't, do &mnot&r go to the next page..."
+				"{@pagebreak}"
+				"hello"
+			]
+			id: "0BD4C163B5B9A73F"
+			shape: "rsquare"
+			subtitle: "&e?₄Ca(H₂O)&r (Is this more tech or magic?)"
+			tasks: [{
+				id: "355FC16B42058B49"
+				item: "flatcore:stone_ore_mass_bucket"
+				type: "item"
+			}]
+			title: "&#8f8f8fStone Ore Mass"
+			x: 5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["42F2B449DE91CA29"]
+			description: ["You should hold off your &#c5c1a8chromite &7(&eFeCr₂O₄&7)&r until you get an &bMV&r electrolyzer, you will need a lot of &#f3e0eachromium &7(&eCr&7)&r."]
+			id: "67E151062121E4AA"
+			shape: "rsquare"
+			subtitle: "A truly off putting color combination"
+			tasks: [
+				{
+					count: 16L
+					id: "55CA567C006B3315"
+					item: { Count: 16, id: "gtceu:chromite_dust" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "7407B823FE5D2CA4"
+					item: { Count: 32, id: "minecraft:lapis_lazuli" }
+					type: "item"
+				}
+			]
+			title: "&#c5c1a8Ironclad &#85a9ffMaterials"
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["42F2B449DE91CA29"]
+			description: ["Yeah I put &#c8ffffdiamonds &7(&eC&7)&r in 2 quests, what now?"]
+			id: "10AE2B7A6C717C6E"
+			shape: "rsquare"
+			subtitle: "Very readable title"
+			tasks: [
+				{
+					count: 32L
+					id: "15F7D5857CD38D1A"
+					item: { Count: 32, id: "minecraft:coal" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "18142D733F509064"
+					item: { Count: 16, id: "gtceu:graphite_dust" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "2166DA5EED27A45F"
+					item: { Count: 8, id: "minecraft:diamond" }
+					type: "item"
+				}
+			]
+			title: "&#393e41Carbon &#a8a89eis &#c8ffffLife"
+			x: 2.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["4B559F3859073C3C"]
+			description: ["You definitely want to process some ores now that you have the machines to do so, specifically for doubling the amount you get per ore and to get byproducts."]
+			id: "2A10C0C7E0F37737"
+			subtitle: "I should stop with the unfunny titles"
+			tasks: [
+				{
+					id: "04D86F1DEB247193"
+					item: "gtceu:lv_thermal_centrifuge"
+					type: "item"
+				}
+				{
+					id: "60E955148F0152D9"
+					item: "gtceu:lv_ore_washer"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Ore Processer? I barely know her!"
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"1D3F4BB09CED54A0"
+				"2A10C0C7E0F37737"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"&#4a6b7fAzuron &7(&ePb₂Cu₂CoSi₂O₉&7)&r is a really expensive material, that conducts &7LV&r voltage with zero loss, at 4 amps per wire."
+				""
+				"You either need to process &#e77c56copper &7(&eCu&7)&r or &#96c185chalcopyrite &7(&eCuFeS₂&7)&r to get &#5050facobalt &7(&eCo&7)&r, or &#1975ffcobaltite &7(&eCoAsS&7)&r (in an EBF)."
+				""
+				"You only need to complete one of the quests to unlock this one."
+				""
+				"It is recommended to use &#f2f2f2silicon dioxide &7(&eSiO₂&7)&r to obtain &#707078silicon &7(&eSi&7)&r and &#4cc3ffoxygen &7(&eO&7)&r, it's currently the best way to do so."
+			]
+			id: "29B722DEF695E45E"
+			shape: "rsquare"
+			subtitle: "&ePb₂Cu₂CoSi₂O₉ &r(&7LV &dSuperconductor&r)"
+			tasks: [{
+				count: 16L
+				id: "1FA4C36943C8FD34"
+				item: "flatcore:azuron_ingot"
+				type: "item"
+			}]
+			title: "&#4a6b7fAzuron"
+			x: 0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0BD4C163B5B9A73F"]
+			description: [
+				"Nevermind, Steve doesn't actually care as long as it's in an iron bucket."
+				""
+				"You will be able to make this by straight up melting stone later on, so don't bother wasting too much &#8f8f8fstone ore mass &7(&e?₄Ca(H₂O)&7)&r for this"
+			]
+			id: "3EECE81CA6BE8400"
+			shape: "rsquare"
+			subtitle: "Caution! Hot surface"
+			tasks: [{
+				id: "651478C2A9CD4C46"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			title: "&#ff4000Lava"
+			x: 6.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"3EECE81CA6BE8400"
+				"3C9FE651D4945BBF"
+			]
+			description: [
+				"&7LV&r rock crushers can make cobblestone and stone!"
+				""
+				"Other major improvements include but are not limited to obsidian at &6HV&r, deepslate at &5EV&r, and much more!"
+			]
+			id: "07DF2A7164D030D6"
+			rewards: [{
+				id: "6C4C32FC31FB5F6C"
+				item: {
+					Count: 1
+					id: "minecraft:stone"
+					tag: {
+						Enchantments: [{
+							id: "infinity"
+							lvl: 1
+						}]
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Finally, infinite!"
+			tasks: [{
+				id: "7DB588E4512FC702"
+				item: "gtceu:lv_rock_crusher"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["42F2B449DE91CA29"]
+			id: "1D3F4BB09CED54A0"
+			shape: "rsquare"
+			subtitle: "&eCoAsS"
+			tasks: [{
+				count: 16L
+				id: "08F724974B7474A7"
+				item: { Count: 16, id: "gtceu:cobaltite_dust" }
+				type: "item"
+			}]
+			title: "&#1975ffCobaltite"
+			x: 3.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["2A10C0C7E0F37737"]
+			description: ["This element will be used throughout the rest of the game! So far primarily obtained through thermal centrifuging &#ffdc88sphalerite &7(&eZnS&7)&r."]
+			id: "66C673CADA9582D2"
+			shape: "rsquare"
+			subtitle: "&eGa"
+			tasks: [{
+				count: 16L
+				id: "19EAFBD50CC77A01"
+				item: { Count: 16, id: "gtceu:gallium_dust" }
+				type: "item"
+			}]
+			title: "&#7a84caGallium"
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3705E61602C0675E"]
+			description: ["You could have obtained it by now using an EBF, but arc furnace does it a lot faster and 40% cheaper!"]
+			hide_dependent_lines: true
+			hide_until_deps_visible: false
+			id: "700C14E438A4A617"
+			subtitle: "&e(SiO&r- nevermind this one doesn't have a formula I guess"
+			tasks: [{
+				count: 16L
+				id: "2D3E30C5CB8A0B7D"
+				item: { Count: 16, id: "gtceu:tempered_glass" }
+				type: "item"
+			}]
+			title: "&fTempered Glass"
+			x: -1.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["1D3F4BB09CED54A0"]
+			id: "308FFC4726BCA1A4"
+			shape: "rsquare"
+			subtitle: "&eAs"
+			tasks: [{
+				count: 16L
+				id: "531B819E1AEB8211"
+				item: { Count: 16, id: "gtceu:arsenic_dust" }
+				type: "item"
+			}]
+			title: "&#9c9c8dArsenic"
+			x: 3.5d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"66C673CADA9582D2"
+				"308FFC4726BCA1A4"
+			]
+			description: [
+				"You will need it for:"
+				"- ALL silicon boules"
+				"- Diodes, SMD diodes"
+				"- Qubit CPU wafers (&9IV&r+ stuff)"
+				""
+				"Currently only needed in small pile form, which is 1/4th of a regular dust!"
+			]
+			id: "38DE2136003DF83A"
+			shape: "rsquare"
+			subtitle: "&eAsGa"
+			tasks: [{
+				count: 16L
+				id: "3C9286C9CCB570FE"
+				item: { Count: 16, id: "gtceu:gallium_arsenide_dust" }
+				type: "item"
+			}]
+			title: "&#938fffGallium Arsenide"
+			x: 5.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["38DE2136003DF83A"]
+			description: ["Your best bet is going for the &#f2c079annealed copper &7(&eCu&7)&r + &#938fffgallium arsenide &7(&eAsGa&7)&r + &#ffffffglass &7(&e(SiO₂)&7)&r recipe, since it gives 2 diodes per craft, and &#c8c8c8polyethylene &7(&eC₂H₄&7)&r is not yet available to you. Batch crafting those is a really good idea."]
+			id: "737285BBBECD6901"
+			rewards: [{
+				count: 32
+				id: "665D7AF616BE09D0"
+				item: "gtceu:diode"
+				type: "item"
+			}]
+			subtitle: "That is a long crafting time"
+			tasks: [{
+				count: 32L
+				id: "302B29B7EA434A1C"
+				item: "gtceu:diode"
+				type: "item"
+			}]
+			title: "Diode"
+			x: 5.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["42F2B449DE91CA29"]
+			description: ["Just in case I do need to explain it... electrolyze the &#fafafasalt &7(&eNaCl&7)&r that you get from stone oreifier."]
+			id: "4FC757411BAB7811"
+			shape: "rsquare"
+			subtitle: "&eCl &r(I hope I don't have to explain how to get it)"
+			tasks: [{
+				id: "0998F1550B365CB7"
+				item: "gtceu:chlorine_bucket"
+				type: "item"
+			}]
+			title: "&#257171Chlorine"
+			x: 6.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["4FC757411BAB7811"]
+			description: [
+				"Etching liquids are used to make boards printed. You can make &#060b0biron(III) chloride &7(&eFeCl₃&7)&r and &#223D3Dsodium persulfate &7(&eNa₂S₂O₈&7)&r, latter of which is harder to make and is less efficient, but making it from &#fafafasalt &7(&eNaCl&7)&r gives a &#b5b5b2hydrochloric acid &7(&eHCl&7)&r byproduct, which you can use to make the more efficient liquid!"
+				""
+				"If you only wanna make one, go for &#060b0biron(III) chloride &7(&eFeCl₃&7)&r."
+				""
+				"&aTip:&r When only doing &#060b0biron(III) chloride &7(&eFeCl₃&7)&r, &#b5b5b5hydrogen &7(&eH&7)&r is recycled, when doing both, you actually produce it."
+			]
+			id: "11B64145131ECC3D"
+			shape: "rsquare"
+			subtitle: "&eFeCl₃&r and/or &eNa₂S₂O₈&r"
+			tasks: [{
+				id: "736886998451942D"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Any Obtainable Etching Liquid\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(gtceu:iron_iii_chloride_bucket)item(gtceu:sodium_persulfate_bucket))"
+					}
+				}
+				type: "item"
+			}]
+			title: "Etching Liquids"
+			x: 8.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["11B64145131ECC3D"]
+			id: "2ECC679663094E33"
+			subtitle: "I will shorten \"PCB\" in the titles"
+			tasks: [{
+				count: 16L
+				id: "43B15A1C1E5A6BB2"
+				item: { Count: 16, id: "gtceu:phenolic_printed_circuit_board" }
+				type: "item"
+			}]
+			title: "Phenolic PCB"
+			x: 8.0d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"737285BBBECD6901"
+				"2ECC679663094E33"
+			]
+			description: [
+				"That is a really expensive recipe, fortunately something great is right around the corner!"
+				""
+				"&9Note!&r This is the last type of circuit you will be making in a crafting table ☺"
+			]
+			icon_scale: 0.9d
+			id: "6FED3DB7D3F59E57"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Not so good in terms of crafting times"
+			tasks: [{
+				count: 4L
+				id: "3FFB1AAE184D9AB5"
+				item: "gtceu:good_electronic_circuit"
+				type: "item"
+			}]
+			title: "Good Electronic Circuit"
+			x: 8.0d
+			y: -12.0d
+		}
+		{
+			dependencies: [
+				"6FED3DB7D3F59E57"
+				"3E5DA0A0759AB093"
+			]
+			description: [
+				"&mAnother place where you can choos-&r No, you can't! You have to use &#8c8ca7soldering alloy &7(&eSn₆Pb₃Sb&7)&r LOLOLL"
+				""
+				"This incredible piece of machinery will make circuits so much cheaper!"
+				""
+				"&9Info!&r A stack of basic &7LV&r circuits will now cost you:"
+				"&7-&r 32 &#c29f6dwood&r planks"
+				"&7-&r 16 &#ffffffglass &7(&e(SiO₂)&7)&r"
+				"&7-&r 32 &#e77c56copper &7(&eCu&7)&r ingots"
+				"&7-&r 16 &#333030carbon &7(&eC&7)&r dust"
+				"&7-&r 24 &#f2c079annealed copper &7(&eCu&7)&r ingots"
+				"&7-&r 16 &#8c8ca7soldering alloy &7(&eSn₆Pb₃Sb&7)&r ingots"
+				"&7-&r 2 &#bcbcbcwrought iron &7(&eFe&7)&r ingots"
+				"&7-&r 34 &#c55252red alloy &7(&eCu(Si(FeS₂)₅(CrAl₂O₃)Hg₃)₄&7)&r ingots"
+				"&7-&r 4,800 mB &#fcca8bglue&r"
+				"&7-&r 4 mB &#f9e8adlubricant&r"
+				""
+				"tbh i jus wanted to test the colors xdd"
+			]
+			icon_scale: 0.9d
+			id: "036F942DF961E870"
+			shape: "gear"
+			size: 1.25d
+			subtitle: "Assemblers, assemble!"
+			tasks: [{
+				id: "233D58F6BDB64961"
+				item: "gtceu:lv_circuit_assembler"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["4B36292E70304D5D"]
+			description: ["Pretty expensive machine, but it pays off. This is basically the crafting table of GT, being able to do over 1,000 recipes from rubber plank stairs to power transformers."]
+			icon_scale: 0.9d
+			id: "4B8F5AB8D30D5FEC"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "6B52E3BBB5535F7B"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4B8F5AB8D30D5FEC"]
+			description: ["Make sure to use the better &#a7a7a7steel &7(&eFe&7)&r recipe, now that you can overclock your EBF (hopefully multiple) to &bMV&r!"]
+			hide_dependent_lines: true
+			id: "6A8AA61E4B9AC35A"
+			tasks: [{
+				id: "34B3689C167671F9"
+				item: "gtceu:lv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"6FED3DB7D3F59E57"
+				"700C14E438A4A617"
+			]
+			description: ["Fully automatable all wood types, and a bunch of other resources!"]
+			icon_scale: 0.9d
+			id: "1E20D80F7C23CE8C"
+			rewards: [{
+				count: 16
+				id: "4CBB086079B6836C"
+				item: "gtceu:fertilizer"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Thanks, &9Monifactory"
+			tasks: [{
+				id: "1E3D0C4B6FA6428A"
+				item: "flatcore:greenhouse"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -13.5d
+		}
+		{
+			dependencies: [
+				"182B54614015C0BE"
+				"146935D0EF1F29E0"
+			]
+			description: ["Your best and easiest source of &#7c80ffsodium &7(&eNa&7)&r, &#7db9d8aluminium &7(&eAl&7)&r, and &#d7e7eelithium &7(&eLi&7)&r for quite some time. It gives &#707078silicon &7(&eSi&7)&r as well."]
+			id: "56D389772050DCCF"
+			shape: "rsquare"
+			subtitle: "&eNa₂LiAl₂Si₂(H₂O)₆"
+			tasks: [{
+				count: 16L
+				id: "73117E4F75E41542"
+				item: { Count: 16, id: "minecraft:clay" }
+				type: "item"
+			}]
+			title: "&#bec9e8Clay"
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"56D389772050DCCF"
+				"6A8AA61E4B9AC35A"
+				"3DA647955AEAD957"
+			]
+			description: ["A material that you will definitely need a LOT of, it's also very light and malleable, which causes it to be one of the quickest materials to process!"]
+			hide_dependent_lines: true
+			id: "3AA3C721D4CA9BB3"
+			shape: "rsquare"
+			size: 1.5d
+			subtitle: "&eAl"
+			tasks: [{
+				count: 16L
+				id: "10A31A5CE2C3A7A8"
+				item: "gtceu:aluminium_ingot"
+				type: "item"
+			}]
+			title: "&#7db9d8Aluminium"
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"3AA3C721D4CA9BB3"
+				"4B8F5AB8D30D5FEC"
+				"2FD84AE0D2373112"
+			]
+			icon_scale: 0.9d
+			id: "574DD0B90E844682"
+			rewards: [{
+				count: 8
+				id: "3E985EE69B092582"
+				item: "gtceu:aluminium_plate"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "This is where the real fun continues"
+			tasks: [{
+				id: "5618AE66BBD11634"
+				item: "gtceu:mv_machine_hull"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4B8F5AB8D30D5FEC"]
+			description: [
+				"For more advanced cables you have to:"
+				"- use assembler with liquid insulators, starting at &bMV&r"
+				"- add &#ff9955polyvinyl chloride &7(&eC₂H₃Cl&7)&r foil, starting at &5EV&r"
+				"- use better insulators, starting at &9IV&r"
+				"- add &#5e5e08polyphenylene sulfide &7(&eC₆H₄S&7)&r foil, starting at &dLuV&r"
+				"&k- add &#c6b78epolyether ether ketone &7(&eC₁₉H₁₂O₃&7)&r&k foil, starting at &cZPM&r"
+				""
+				"You can extract ingots so you don't have to make sheets anymore ☺"
+			]
+			id: "2FD84AE0D2373112"
+			rewards: [{
+				count: 16
+				id: "201E686BA70927BA"
+				item: "gtceu:rubber_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "79ADCACDEB0CA346"
+				item: { Count: 16, id: "gtceu:copper_single_cable" }
+				type: "item"
+			}]
+			title: "Picky Cables"
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["11B64145131ECC3D"]
+			description: ["Those are used to craft various redstone(-related) components, such as tiny gates and even comparators."]
+			id: "52DAE5263320D973"
+			subtitle: "Two in a row"
+			tasks: [{
+				count: 16L
+				id: "3CFD199C749F9CB7"
+				item: { Count: 16, id: "kubejs:redstone_printed_circuit_board" }
+				type: "item"
+			}]
+			title: "Redstone PCB"
+			x: 9.5d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"52DAE5263320D973"
+				"036F942DF961E870"
+			]
+			id: "60A1B459350FF1C1"
+			tasks: [{
+				count: 16L
+				id: "1CDA6BA1D999A268"
+				item: "kubejs:redstone_circuit"
+				type: "item"
+			}]
+			title: "Redstone Circuit"
+			x: 11.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["4B36292E70304D5D"]
+			description: [
+				"The water pump is your first way of getting free water, which allows for full automation of various resources. It requires no energy to run, but that means it can't be overclocked either."
+				""
+				"Better options that you unlock later are:"
+				"- infinite water cover at &6HV&r"
+				"- reservoir hatch at &5EV&r"
+			]
+			icon_scale: 0.9d
+			id: "146935D0EF1F29E0"
+			shape: "gear"
+			size: 1.25d
+			subtitle: "Jeez, that's a lot of steel"
+			tasks: [{
+				id: "56E96312229C882D"
+				item: "gtceu:water_pump"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7F7C93EC6FE5A4F5"]
+			description: [
+				"To obtain these, you need to craft the mysterious cube from AE2, then break it with something that doesn't have silk touch (not like you have access to it anyway)."
+				""
+				"The recipe shouldn't be too hard, and you only need to ever do it once anyway."
+			]
+			id: "4F6CBC649274852A"
+			tasks: [
+				{
+					id: "6935D177785CFB07"
+					item: "ae2:calculation_processor_press"
+					type: "item"
+				}
+				{
+					id: "7FD5A139F079EDBA"
+					item: "ae2:engineering_processor_press"
+					type: "item"
+				}
+				{
+					id: "3EF5B4696B8FF394"
+					item: "ae2:logic_processor_press"
+					type: "item"
+				}
+				{
+					id: "08B4CF7E414E82C5"
+					item: "ae2:silicon_press"
+					type: "item"
+				}
+			]
+			title: "Inscriber Presses"
+			x: 5.0d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"4F6CBC649274852A"
+				"036F942DF961E870"
+			]
+			description: [
+				"Thankfully for you, these are really easy to mass produce! Maybe except for &#707078silicon &7(&eSi&7)&r ingots... for now... those take a while."
+				""
+				"To people who already played GT before, &#707078silicon &7(&eSi&7)&r does not require &#c2d2dfkanthal &7(&eFeAlCr&7)&r coils nor cooling in this pack!"
+			]
+			id: "4365A27D7175A17E"
+			subtitle: "Inspired by GTCPM!"
+			tasks: [
+				{
+					count: 16L
+					id: "484197206DA2BAD4"
+					item: { Count: 16, id: "ae2:calculation_processor" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1BFDF4074CAADAA6"
+					item: { Count: 16, id: "ae2:engineering_processor" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "55F02836AA93606A"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+			]
+			title: "Applied Circuits 2"
+			x: 9.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["4365A27D7175A17E"]
+			description: [
+				"Yeah, it's almost at the end of &7LV&r, and you could be in &bMV&r by now, but the option to enter &bMV&r with a fully functioning AE2 system is very much possible!"
+				""
+				"Channels &oare&r disabled, but who doesn't like the shiny cube? Plus it makes your system have less passive energy drain!"
+			]
+			icon_scale: 0.9d
+			id: "21286215869A958B"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "&a[ Everyone liked that ]"
+			tasks: [{
+				id: "327A3F7844E48964"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			title: "Applied Energistics in Low Voltage"
+			x: 11.0d
+			y: -15.0d
+		}
+		{
+			dependencies: [
+				"11E770ADE2A0F08B"
+				"4B8F5AB8D30D5FEC"
+			]
+			description: ["Upgrade your EBFs! This unlocks hotter recipes and makes colder ones more energy efficient, just like every next coil."]
+			hide_dependent_lines: true
+			icon_scale: 0.9d
+			id: "3DA647955AEAD957"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				count: 16L
+				id: "78CBD84B69AEDC01"
+				item: "gtceu:cupronickel_coil_block"
+				type: "item"
+			}]
+			title: "&#ffda8aCupronickel Coil Block"
+			x: 6.5d
+			y: -4.5d
+		}
+	]
+	title: "&7LV&r - Low Voltage"
+}

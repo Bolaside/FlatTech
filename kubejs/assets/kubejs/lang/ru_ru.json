@@ -1,0 +1,48 @@
+{
+  "material.gtceu.azuron": "Азурон",
+  "material.gtceu.red_brass": "Красная латунь",
+  "material.gtceu.stone_ore_mass": "Масса каменной руды",
+
+  "block.gtceu.ulv_ore_separator": "Отделитель руды",
+  "block.gtceu.ulv_squeezer": "Примитивный выжиматель",
+  "block.gtceu.ulv_mixer": "Примитивный смеситель",
+  "block.gtceu.ulv_assembler": "Примитивная сборочная машина",
+  "block.gtceu.ulv_alloy_smelter": "Примитивная печь для сплавов",
+  "block.gtceu.ulv_forge_hammer": "Примитивный кузнечный молот",
+  "block.gtceu.ulv_wiremill": "Примитивный волочильный станок",
+  "block.gtceu.ulv_bender": "Примитивный гибочный станок",
+  "block.gtceu.ulv_extractor": "Примитивный экстрактор",
+  "block.gtceu.ulv_electrolyzer": "Примитивный электролизер",
+  "block.gtceu.ulv_chemical_bath": "Примитивная химическая ванна",
+
+  "block.gtceu.water_pump": "Водяная помпа",
+  "block.gtceu.stone_oreifier": "Оруднитель камней",
+  "block.gtceu.greenhouse": "Теплица",
+
+  "item.kubejs.cobble": "Камушек",
+
+  "item.kubejs.sieve_squeezer_mold": "Форма выжимателя (Сито)",
+  "item.kubejs.plank_squeezer_mold": "Форма выжимателя (Доска)",
+
+  "item.ulvcovm.ulv_electric_motor": "Электрический мотор (§8ULV§r)",
+  "item.ulvcovm.ulv_electric_piston": "Электрический поршень (§8ULV§r)",
+  "item.ulvcovm.ulv_electric_pump": "Электрическая помпа (§8ULV§r)",
+  "item.ulvcovm.ulv_conveyor_module": "Конвейерный модуль (§8ULV§r)",
+  "item.ulvcovm.ulv_fluid_regulator": "Регулятор жидкости (§8ULV§r)",
+  "item.ulvcovm.ulv_robot_arm": "Роботизированный манипулятор (§8ULV§r)",
+  "item.kubejs.ulv_field_generator": "Генератор поля (§8ULV§r)",
+
+  "item.kubejs.bedrock_ore_extractor": "Экстрактор руды бедрока",
+
+  "item.kubejs.ferrous_mineral": "Железный минерал",
+  "item.kubejs.hematite_redstone_mix": "Смесь гематита и редстоуна",
+  "item.kubejs.galena_sphalerite_blend": "Смесь галены и сфалерита",
+  "item.kubejs.cupriferous_aggregate": "Медножелезный агрегат",
+  "item.kubejs.cassiterite_impurities": "Примеси касситерита",
+
+  "item.kubejs.tin_alloy_coil_block": "Катушка из оловянного сплава",
+
+  "item.kubejs.redstone_circuit_board": "Редстоуновая подложка",
+  "item.kubejs.redstone_printed_circuit_board": "Редстоуновая электросхема",
+  "item.kubejs.redstone_circuit": "Редстоуновая микросхема"
+}

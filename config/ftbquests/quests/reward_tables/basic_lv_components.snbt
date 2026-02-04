@@ -1,0 +1,13 @@
+{
+	id: "5160948C6A455DF2"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ count: 16, item: "gtceu:lv_electric_motor" }
+		{ count: 8, item: "gtceu:lv_electric_piston" }
+		{ count: 8, item: "gtceu:lv_conveyor_module" }
+		{ count: 4, item: "gtceu:lv_electric_pump" }
+		{ count: 4, item: "gtceu:lv_robot_arm" }
+	]
+	title: "Basic LV Components"
+}

@@ -1,0 +1,33 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "shop"
+	group: ""
+	icon: "quark:soul_bead"
+	id: "5B7228265BE590D1"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"Not really... but you'll be able to buy some QoL stuff here... when I get to it..."
+			""
+			""
+			""
+			""
+			""
+			""
+			"hi"
+		]
+		id: "44FEC7F820B8BEA1"
+		size: 1.5d
+		subtitle: "Pay to Win"
+		tasks: [{
+			id: "368D37C82B2EC8E0"
+			title: "FlatShop"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Shop"
+}

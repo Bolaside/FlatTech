@@ -1,0 +1,506 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "bmvr__medium_voltage"
+	group: "1817B7E3E64035EE"
+	icon: "gtceu:mv_field_generator"
+	id: "6F088BF87B3CA753"
+	order_index: 3
+	quest_links: [{
+		id: "22454743FF6A9BCB"
+		linked_quest: "574DD0B90E844682"
+		shape: "gear"
+		size: 2.0d
+		x: 0.0d
+		y: 0.0d
+	}]
+	quests: [
+		{
+			dependencies: ["574DD0B90E844682"]
+			description: ["You need a lot of &#7db9d8aluminium &7(&eAl&7)&r."]
+			id: "340A703B4EE971AE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4C8BBDABCDBEDB7B"
+				table_id: 3838846727799582158L
+				type: "all_table"
+			}]
+			subtitle: "Do you hate this already? We're just getting started"
+			tasks: [
+				{
+					count: 16L
+					id: "2C30AC8467931B66"
+					item: "gtceu:mv_electric_motor"
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "20D3AEF766CBFEBB"
+					item: "gtceu:mv_electric_piston"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "31E63E9E31BF4BD4"
+					item: "gtceu:mv_conveyor_module"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2B2413A5A27D1A09"
+					item: "gtceu:mv_electric_pump"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6C8A66825FC0A06F"
+					item: "gtceu:mv_robot_arm"
+					type: "item"
+				}
+			]
+			title: "Basic &bMV&r Components"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"14B59521E19136A7"
+				"627CB6733DF8838A"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"What a jumpscare to have right at the beginning of &bMV&r! This is your first polymer, and will be the most widely used one for a while."
+				""
+				"I personally would recommend solidifying into ingots, since they can be (very quickly) bent into plates/foil and extracted, while storing the fluid is slower to solidify."
+			]
+			icon_scale: 0.9d
+			id: "63549F4812F986B0"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "&eC₂H₄"
+			tasks: [{
+				count: 16L
+				id: "67854BE383F65C05"
+				item: { Count: 1048576, id: "gtceu:polyethylene_ingot" }
+				type: "item"
+			}]
+			title: "&#c8c8c8Polyethylene"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["340A703B4EE971AE"]
+			description: [
+				"This thing will mine &#0a0a0aoil&r indefinitely for you, since oil veins are infinite in this pack."
+				""
+				"Best way to get &#e1e1e1ethylene &7(&eC₂H₄&7)&r is to distill &#bfb608severely steam-cracked naphtha&r, but this is the last time I'll let you know the most optimal recipe in a quest, since you can figure those out very easily with &dE&aM&bI&r."
+				""
+				"The advantage of this route is that you don't need any &bMV&r singleblocks and thus no need for an &bMV&r power line."
+				""
+				"You'll definitely need this machine eventually, so it's not an optional quest."
+			]
+			icon: "gtceu:mv_fluid_drilling_rig"
+			icon_scale: 0.9d
+			id: "627CB6733DF8838A"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Oleum infinitum (hi jumbo, hi jsosi)!"
+			tasks: [
+				{
+					id: "06430943928C9FC2"
+					item: "gtceu:mv_fluid_drilling_rig"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "01A3DBFB57A6DE0E"
+					item: { Count: 15, id: "gtceu:steel_frame" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "79ADCD905FE8C65C"
+					item: { Count: 7, id: "gtceu:solid_machine_casing" }
+					type: "item"
+				}
+				{
+					id: "6FA4498C5ED0690D"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Any Obtainable Output Hatch\"}"
+							}
+							"ftbfiltersystem:filter": "or(item(gtceu:ulv_output_hatch)item(gtceu:lv_output_hatch)item(gtceu:mv_output_hatch))"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6E70C8AD59EEE234"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Any Advanced Fluid Drilling Rig Energy Hatch\"}"
+							}
+							"ftbfiltersystem:filter": "or(item(gtceu:lv_energy_input_hatch)item(gtceu:mv_energy_input_hatch))"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Oil Route"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["340A703B4EE971AE"]
+			description: [
+				"A more eco-friendly option is to use &#ff4901ethanol &7(&eC₂H₆O&7)&r and &#ff7300sulfuric acid &7(&eH₂SO₄&7)&r to make &#e1e1e1ethylene &7(&eC₂H₄&7)&r and polymerize it."
+				""
+				"The &#c07820diluted sulfuric acid &7(&e(H₂SO₄)₂(H₂O)&7)&r can be distilled to get 50% of the &#ff7300sulfuric acid &7(&eH₂SO₄&7)&r back."
+				""
+				"To get &#ff4901ethanol &7(&eC₂H₆O&7)&r, distill &#00ff00biomass&r, which can be obtained through the pyrolyse oven with bio chaff, or brewery with some kind of plant. Again, the choice is yours, and the calculations on which is better is also on you."
+				""
+				"The advantage of this route is its simplicity (3 steps excluding &eH₂SO₄&r) and speed (can be slower than the oil route depending on how you set it up, though)."
+			]
+			icon: "gtceu:ethanol_bucket"
+			id: "14B59521E19136A7"
+			optional: true
+			size: 1.0d
+			tasks: [
+				{
+					id: "2E89C86E05DF5ABB"
+					item: "gtceu:mv_chemical_reactor"
+					type: "item"
+				}
+				{
+					id: "57479858BA0072E7"
+					item: "gtceu:mv_brewery"
+					type: "item"
+				}
+			]
+			title: "Bio Route"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["63549F4812F986B0"]
+			id: "6BFC836E8B1ACFAE"
+			tasks: [{
+				count: 64L
+				id: "5632F975D5EB4F3B"
+				item: { Count: 32, id: "gtceu:transistor" }
+				type: "item"
+			}]
+			title: "Transistor"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3CE17E4EBCED4155"]
+			description: ["You need the &bMV&r mixer to make &#b59fccvanadium steel &7(&eVCrFe₇&7)&r for the buzzsaw blade."]
+			id: "06DE777F6100F6D5"
+			tasks: [{
+				id: "55275546B88FD88B"
+				item: "gtceu:mv_cutter"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["340A703B4EE971AE"]
+			id: "3CE17E4EBCED4155"
+			tasks: [{
+				id: "470E109CE96367A5"
+				item: "gtceu:mv_mixer"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["340A703B4EE971AE"]
+			description: [
+				"This machine will reduce microcrafting by a LOT by making many things be craftable using just ingots and an extruder (not casting!) mold, including but not limited to:"
+				"- rotors (4 ingots)"
+				"- bolts (1 ingot → 8 bolts)"
+				"- gears (4 ingots)"
+				"- any size pipes"
+				"- and more."
+				""
+				"Some advanced materials might require an &6HV&r extruder, but you should be good for now."
+			]
+			icon_scale: 0.9d
+			id: "1893ADD106341925"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Microcrafting just got way easier!"
+			tasks: [{
+				id: "4C1CA96FABA9E3C5"
+				item: "gtceu:mv_extruder"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["06C3AFE897952D75"]
+			description: ["A single boule takes a whopping 7.5 minutes! Thankfully, those yield a lot of..."]
+			id: "0CC93C34147A7085"
+			subtitle: "The time eater"
+			tasks: [{
+				id: "7A806BBC5BF5A117"
+				item: "gtceu:silicon_boule"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"0CC93C34147A7085"
+				"06DE777F6100F6D5"
+			]
+			description: ["...wafers, and those are cut into even more..."]
+			id: "2120259423A31463"
+			tasks: [
+				{
+					id: "58A2993B30D2F180"
+					title: "Basic Wafers"
+					type: "checkmark"
+				}
+				{
+					id: "717142CDC34AE211"
+					item: "gtceu:cpu_wafer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6545D49CD4D40C42"
+					item: "gtceu:ram_wafer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3C1D93616D7FAF64"
+					item: "gtceu:ilc_wafer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6A948843D24EC22B"
+					item: "gtceu:ulpic_wafer"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2120259423A31463"]
+			description: [
+				"...chips, so maybe 7.5 minutes per boule isn't that bad!"
+				""
+				"The linked quests can be unlocked by completing a matching chip, so no need to make all of them just yet."
+			]
+			id: "4965105C39E5E9BD"
+			tasks: [
+				{
+					count: 8L
+					id: "2F7CC477C9D6D8BE"
+					item: { Count: 6, id: "gtceu:cpu_chip" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "47FA9AC38B022B20"
+					item: { Count: 16, id: "gtceu:ram_chip" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 8L
+					id: "656CD49E0CB1419D"
+					item: { Count: 6, id: "gtceu:ilc_chip" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "4A7AFE5470B1FCB2"
+					item: { Count: 6, id: "gtceu:ulpic_chip" }
+					type: "item"
+				}
+			]
+			title: "Basic Chips"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"74C7289827E07719"
+				"6BFC836E8B1ACFAE"
+				"47FA9AC38B022B20"
+			]
+			description: ["Your first &6HV&r circuits! Hope you have an &bMV&r wiremill for these pesky fine wires."]
+			id: "18BFDD35CDB31310"
+			tasks: [{
+				count: 8L
+				id: "37A4E0F09720CB1A"
+				item: { Count: 8, id: "gtceu:advanced_integrated_circuit" }
+				type: "item"
+			}]
+			title: "Advanced Integrated Circuit"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3CD3F51F969BE462"]
+			id: "74C7289827E07719"
+			tasks: [{
+				count: 16L
+				id: "511B24FFB4AADC98"
+				item: { Count: 16, id: "gtceu:good_integrated_circuit" }
+				type: "item"
+			}]
+			title: "Good Integrated Circuit"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"656CD49E0CB1419D"
+				"4965105C39E5E9BD"
+			]
+			dependency_requirement: "one_completed"
+			id: "3CD3F51F969BE462"
+			tasks: [{
+				count: 16L
+				id: "581C014C22A755AB"
+				item: { Count: 16, id: "gtceu:basic_integrated_circuit" }
+				type: "item"
+			}]
+			title: "Basic Integrated Circuit"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4A7AFE5470B1FCB2"
+				"4965105C39E5E9BD"
+			]
+			dependency_requirement: "one_completed"
+			id: "64FEE83AD845A4B6"
+			tasks: [{
+				id: "28A0E604351D9AEF"
+				item: "gtceu:mv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"11E770ADE2A0F08B"
+				"4B8F5AB8D30D5FEC"
+				"64FEE83AD845A4B6"
+				"7E0226365275F483"
+			]
+			description: [
+				"Again, this unlocks hotter recipes, but also your first perfect overclock!"
+				""
+				"Normally, machines overclock by using 4x as much energy for 2x faster processing time. Perfect overclock, on the other hand, does 4x faster processing time, despite using the same 4x energy."
+				""
+				"&#c2d2dfKanthal &7(&eFeAlCr&7)&r coils with &6HV&r voltage unlock a perfect overclock for &#a7a7a7steel &7(&eFe&7)&r ingots, but only once, so, instead of being 7.5 seconds at &6HV&r, it's actually 3.75 seconds, but at &5EV&r it's 1.88 seconds instead of 0.94. For 0.94 seconds at &5EV&r, you'd need a coil 2 tiers above &#c2d2dfkanthal &7(&eFeAlCr&7)&r - &#30306bRTM alloy &7(&eRu₄W₂Mo&7)&r. But that's for later."
+			]
+			hide_dependent_lines: true
+			icon_scale: 0.9d
+			id: "30FE4C80320F2348"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				count: 16L
+				id: "787D94C846D98E7B"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			title: "&#c2d2dfKanthal Coil Block"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["340A703B4EE971AE"]
+			description: [
+				"At some point, ingots coming out of the EBF become too hot to use normally, so you need to cool them down. For some ingots, you can use an &bMV&r chemical bath, but at &6HV&r, you will need the vacuum freezer."
+				""
+				"&#4a94ffDistilled water &7(&eH₂O&7)&r performs cooling 1.6x faster."
+			]
+			id: "7E0226365275F483"
+			tasks: [{
+				id: "719ED5EA1FBDAA9B"
+				item: "gtceu:mv_chemical_bath"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["64FEE83AD845A4B6"]
+			description: ["This will be the main &6HV&r material. For now, you can use it to start off your autocrafting system!"]
+			id: "763DAE9A5867FB4F"
+			shape: "rsquare"
+			subtitle: "&eFe₆CrMnNi"
+			tasks: [{
+				count: 16L
+				id: "5015D8D1214186D9"
+				item: { Count: 16, id: "gtceu:stainless_steel_ingot" }
+				type: "item"
+			}]
+			title: "&#ededfdStainless Steel"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["763DAE9A5867FB4F"]
+			description: [
+				"Blank patterns are used to encode any recipes, from crafting to wiremill to entire processing lines in one pattern, they can do a LOT."
+				""
+				"Essentially, when in \"processing\" mode, they can be encoded for AE2 to &oexpect&r any items/fluids after pushing any items/fluids through a pattern provider. What happens in between does not matter for AE2."
+				""
+				"The better polymer you use, the more patterns you get."
+			]
+			icon_scale: 0.9d
+			id: "7B9F66BAE39CCB29"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				count: 16L
+				id: "5594094E67E7C328"
+				item: { Count: 16, id: "ae2:blank_pattern" }
+				type: "item"
+			}]
+			title: "Blank Pattern"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["18BFDD35CDB31310"]
+			description: ["You'll need to sift some &#17ff6cemerald &7(&eBe₃Al₂Si₆O₁₈&7)&r ore using any tier sifter in order to obtain the flawless emerald required for the emitter. The rest you should be familiar with."]
+			id: "7BF46BC754E7577D"
+			tasks: [{
+				id: "3F5E7E613394D76E"
+				item: "gtceu:mv_circuit_assembler"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+	]
+	title: "&bMV&r - Medium Voltage"
+}

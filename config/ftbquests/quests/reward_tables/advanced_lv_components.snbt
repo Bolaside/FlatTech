@@ -1,0 +1,11 @@
+{
+	id: "31A8D33FD5A8DAEB"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ item: "gtceu:lv_emitter" }
+		{ item: "gtceu:lv_sensor" }
+		{ item: "gtceu:lv_field_generator" }
+	]
+	title: "Advanced LV Components"
+}

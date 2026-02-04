@@ -1,0 +1,13 @@
+{
+	id: "354652C285AA2DCE"
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{ count: 16, item: "gtceu:mv_electric_motor" }
+		{ count: 8, item: "gtceu:mv_electric_piston" }
+		{ count: 8, item: "gtceu:mv_conveyor_module" }
+		{ count: 4, item: "gtceu:mv_electric_pump" }
+		{ count: 4, item: "gtceu:mv_robot_arm" }
+	]
+	title: "Basic MV Components"
+}
